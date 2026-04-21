@@ -4,9 +4,7 @@ title: Unit Economics Workbook
 
 This workbook is designed for analysts: filter, compare cohorts, and drill into outliers.
 
-<Alert status="info">
-All metrics are computed from <b>order-level contribution</b> in <code>analytics.marts_fct_unit_economics</code>.
-</Alert>
+> All metrics are computed from **order-level contribution** in `analytics.marts_fct_unit_economics`.
 
 ## Controls
 
