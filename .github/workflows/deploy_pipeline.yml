@@ -70,7 +70,7 @@ jobs:
           echo "-- pages --"
           ls -la pages || true
           echo "-- getEvidenceConfig() --"
-          node -e "import { getEvidenceConfig } from '@evidence-dev/sdk/src/configuration/getEvidenceConfig.js'; console.log(JSON.stringify(getEvidenceConfig(), null, 2));"
+          node -e "import { getEvidenceConfig } from '@evidence-dev/sdk/config'; console.log(JSON.stringify(getEvidenceConfig(), null, 2));"
           npm run build
 
       - name: Locate Evidence build output (debug)
