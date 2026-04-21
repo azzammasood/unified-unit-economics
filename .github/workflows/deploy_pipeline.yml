@@ -62,6 +62,32 @@ jobs:
         run: |
           npm run build
 
+      - name: Locate Evidence build output (debug)
+        run: |
+          echo "== dashboard directory =="
+          ls -la dashboard || true
+          echo "== dashboard/build =="
+          ls -la dashboard/build || true
+          echo "== dashboard/.evidence =="
+          ls -la dashboard/.evidence || true
+          echo "== dashboard/.evidence/build =="
+          ls -la dashboard/.evidence/build || true
+
+      - name: Normalize build output to dashboard/build
+        run: |
+          if [ -d "dashboard/build" ]; then
+            echo "Using dashboard/build"
+            exit 0
+          fi
+          if [ -d "dashboard/.evidence/build" ]; then
+            echo "Found dashboard/.evidence/build; copying to dashboard/build"
+            mkdir -p dashboard/build
+            cp -R dashboard/.evidence/build/* dashboard/build/
+            exit 0
+          fi
+          echo "No Evidence build output directory found."
+          exit 1
+
       - name: Configure Pages
         uses: actions/configure-pages@v5
 
