@@ -2,7 +2,7 @@ plugins:
   components:
     "@evidence-dev/core-components":
       aliases:
-        DataTable: Table
+        Table: DataTable
   datasources:
     "@evidence-dev/duckdb": {}
 
