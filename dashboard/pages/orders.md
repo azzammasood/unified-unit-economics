@@ -8,21 +8,9 @@ This page is designed for analysts to investigate distribution + outliers. It an
 - Are we paying riders and burning fuel in line with revenue?
 - Which orders are outliers (negative contribution)?
 
-## Controls
-
-<DateRange name=start_date defaultValue="2026-01-01" />
-<DateRange name=end_date defaultValue="2026-03-31" />
-<Dropdown
-  name=vertical
-  defaultValue="All"
-  options={["All","Bakery","Grocery","Pharma"]} />
-<NumberInput name=top_n defaultValue={25} title="Top N Outliers" />
-
 ```sql base
 select *
 from analytics.marts_fct_unit_economics
-where order_date between date '${inputs.start_date}' and date '${inputs.end_date}'
-  and (${inputs.vertical} = 'All' or vertical = '${inputs.vertical}')
 ```
 
 ```sql vertical_rollup
@@ -78,7 +66,7 @@ select
   round(100 * net_margin_pct, 2) as net_margin_pct
 from (${base}) b
 order by net_profit_pkr asc
-limit ${inputs.top_n}
+limit 25
 ```
 
 <Table data={worst_orders} title="Most Negative Net Profit Orders" />
@@ -97,7 +85,7 @@ select
   net_profit_pkr
 from (${base}) b
 order by fuel_liters_per_km desc
-limit ${inputs.top_n}
+limit 25
 ```
 
 <Table data={fuel_outliers} title="Highest Fuel Burn per km" />
@@ -113,7 +101,7 @@ select
   net_profit_pkr
 from (${base}) b
 order by payout_pkr_per_km desc nulls last
-limit ${inputs.top_n}
+limit 25
 ```
 
 <Table data={payout_outliers} title="Highest Rider Payout per km" />

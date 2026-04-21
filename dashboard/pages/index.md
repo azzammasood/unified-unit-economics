@@ -6,22 +6,9 @@ This workbook is designed for analysts: filter, compare cohorts, and drill into 
 
 > All metrics are computed from **order-level contribution** in `analytics.marts_fct_unit_economics`.
 
-## Controls
-
-<DateRange name=start_date defaultValue="2026-01-01" />
-<DateRange name=end_date defaultValue="2026-03-31" />
-<Dropdown
-  name=vertical
-  defaultValue="All"
-  options={["All","Bakery","Grocery","Pharma"]} />
-<NumberInput name=min_net_profit defaultValue={-999999} title="Min Net Profit (PKR)" />
-
 ```sql filtered_base
 select *
 from analytics.marts_fct_unit_economics
-where order_date between date '${inputs.start_date}' and date '${inputs.end_date}'
-  and (${inputs.vertical} = 'All' or vertical = '${inputs.vertical}')
-  and net_profit_pkr >= ${inputs.min_net_profit}
 ```
 
 ```sql kpis
@@ -34,13 +21,11 @@ select
 from (${filtered_base}) b
 ```
 
-<Grid cols=5>
-  <Value data={kpis} value=orders title="Orders" />
-  <Value data={kpis} value=revenue_pkr title="Revenue (PKR)" />
-  <Value data={kpis} value=net_profit_pkr title="Net Profit (PKR)" />
-  <Value data={kpis} value=avg_margin_pct title="Avg Margin (%)" />
-  <Value data={kpis} value=fuel_l_per_100_km title="Fuel (L/100km)" />
-</Grid>
+<Value data={kpis} value=orders title="Orders" />
+<Value data={kpis} value=revenue_pkr title="Revenue (PKR)" />
+<Value data={kpis} value=net_profit_pkr title="Net Profit (PKR)" />
+<Value data={kpis} value=avg_margin_pct title="Avg Margin (%)" />
+<Value data={kpis} value=fuel_l_per_100_km title="Fuel (L/100km)" />
 
 ## Contribution by Vertical
 
@@ -103,7 +88,6 @@ with m as (
     sum(conversions) as conversions,
     case when sum(conversions) > 0 then sum(spend_pkr) / sum(conversions) else null end as cac_pkr
   from analytics.staging_stg_marketing
-  where spend_date between date '${inputs.start_date}' and date '${inputs.end_date}'
   group by 1, 2
 ),
 rev as (
@@ -125,10 +109,8 @@ group by 1
 order by revenue_pkr desc
 ```
 
-<Grid cols=2>
-  <BarChart data={channel_efficiency} x=channel y=avg_cac_pkr title="Average CAC by Channel (PKR)" />
-  <BarChart data={channel_efficiency} x=channel y=revenue_pkr title="Revenue on Channel-Active Days (PKR)" />
-</Grid>
+<BarChart data={channel_efficiency} x=channel y=avg_cac_pkr title="Average CAC by Channel (PKR)" />
+<BarChart data={channel_efficiency} x=channel y=revenue_pkr title="Revenue on Channel-Active Days (PKR)" />
 
 ## Drilldowns
 
