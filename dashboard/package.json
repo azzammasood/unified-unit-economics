@@ -11,7 +11,8 @@
     "@evidence-dev/tailwind": "^3.1.4"
   },
   "devDependencies": {
-    "typescript": "5.4.2"
+    "typescript": "5.4.2",
+    "@sveltejs/vite-plugin-svelte": "^7.0.0"
   }
 }
 
