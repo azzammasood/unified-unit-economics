@@ -29,7 +29,7 @@ group by 1
 order by net_profit_pkr desc
 ```
 
-<Table data={vertical_rollup} title="Unit Economics by Vertical" />
+<DataTable data={vertical_rollup} title="Unit Economics by Vertical" />
 
 ```sql margin_hist
 select
@@ -69,7 +69,7 @@ order by net_profit_pkr asc
 limit 25
 ```
 
-<Table data={worst_orders} title="Most Negative Net Profit Orders" />
+<DataTable data={worst_orders} title="Most Negative Net Profit Orders" />
 
 ## Outlier Panels
 
@@ -88,7 +88,7 @@ order by fuel_liters_per_km desc
 limit 25
 ```
 
-<Table data={fuel_outliers} title="Highest Fuel Burn per km" />
+<DataTable data={fuel_outliers} title="Highest Fuel Burn per km" />
 
 ```sql payout_outliers
 select
@@ -104,5 +104,5 @@ order by payout_pkr_per_km desc nulls last
 limit 25
 ```
 
-<Table data={payout_outliers} title="Highest Rider Payout per km" />
+<DataTable data={payout_outliers} title="Highest Rider Payout per km" />
 

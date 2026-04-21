@@ -42,7 +42,7 @@ group by 1
 order by net_profit_pkr desc
 ```
 
-<Table data={margin_by_vertical} title="Vertical Rollup (Filtered)" />
+<DataTable data={margin_by_vertical} title="Vertical Rollup (Filtered)" />
 
 ## Operational Efficiency
 
@@ -73,7 +73,7 @@ order by fuel_liters_per_100_deliveries desc
 limit 10
 ```
 
-<Table data={worst_fuel_days} title="Worst Fuel Efficiency Days" />
+<DataTable data={worst_fuel_days} title="Worst Fuel Efficiency Days" />
 
 ## Marketing Efficiency
 
@@ -132,5 +132,5 @@ order by net_profit_pkr asc
 limit 50
 ```
 
-<Table data={worst_orders} title="Worst Orders (by Net Profit)" />
+<DataTable data={worst_orders} title="Worst Orders (by Net Profit)" />
 
