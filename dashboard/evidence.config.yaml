@@ -2,5 +2,5 @@ deployment:
   type: static
 
 plugins:
-  components: []
+  components: {}
 
