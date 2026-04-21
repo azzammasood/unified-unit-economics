@@ -60,6 +60,17 @@ jobs:
         env:
           DUCKDB_PATH: ${{ github.workspace }}/warehouse.duckdb
         run: |
+          echo "== Evidence config debug =="
+          pwd
+          ls -la
+          echo "-- evidence.config.yaml --"
+          (test -f evidence.config.yaml && cat evidence.config.yaml) || echo "missing evidence.config.yaml"
+          echo "-- sources --"
+          ls -la sources || true
+          echo "-- pages --"
+          ls -la pages || true
+          echo "-- getEvidenceConfig() --"
+          node -e "import { getEvidenceConfig } from '@evidence-dev/sdk/src/configuration/getEvidenceConfig.js'; console.log(JSON.stringify(getEvidenceConfig(), null, 2));"
           npm run build
 
       - name: Locate Evidence build output (debug)
