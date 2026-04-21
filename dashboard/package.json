@@ -1,0 +1,16 @@
+{
+  "name": "unified-unit-economics-dashboard",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "evidence dev --host 0.0.0.0 --port 3000",
+    "build": "evidence build"
+  },
+  "dependencies": {
+    "@evidence-dev/evidence": "^40.0.0"
+  },
+  "devDependencies": {
+    "typescript": "5.4.2"
+  }
+}
+

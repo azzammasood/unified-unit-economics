@@ -1,0 +1,78 @@
+name: deploy-pipeline
+
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    env:
+      MOTHERDUCK_TOKEN: ${{ secrets.MOTHERDUCK_TOKEN }}
+      MOTHERDUCK_DATABASE: ${{ secrets.MOTHERDUCK_DATABASE }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install Python dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Generate synthetic CSVs (+ ingest to MotherDuck)
+        run: |
+          python data_gen/generator.py
+
+      - name: Run dbt build (run + test)
+        env:
+          DBT_PROFILES_DIR: ${{ github.workspace }}/dbt_project
+        run: |
+          dbt --version
+          dbt build --project-dir dbt_project
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+          cache-dependency-path: dashboard/package.json
+
+      - name: Install dashboard dependencies
+        working-directory: dashboard
+        run: |
+          npm install --no-audit --no-fund --legacy-peer-deps
+
+      - name: Build Evidence static site
+        working-directory: dashboard
+        env:
+          MOTHERDUCK_TOKEN: ${{ secrets.MOTHERDUCK_TOKEN }}
+          MOTHERDUCK_DATABASE: ${{ secrets.MOTHERDUCK_DATABASE }}
+        run: |
+          npm run build
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dashboard/build
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+

@@ -1,0 +1,8 @@
+unified_unit_economics:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: "md:{{ env_var('MOTHERDUCK_DATABASE', 'unified_unit_economics') }}?motherduck_token={{ env_var('MOTHERDUCK_TOKEN') }}"
+      schema: analytics
+      threads: 4

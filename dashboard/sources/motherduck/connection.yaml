@@ -1,0 +1,4 @@
+type: duckdb
+options:
+  filename: "md:${MOTHERDUCK_DATABASE}?motherduck_token=${MOTHERDUCK_TOKEN}"
+  schema: analytics

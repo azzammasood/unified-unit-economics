@@ -1,0 +1,22 @@
+version: 2
+
+models:
+  - name: fct_unit_economics
+    description: "Order-level unit economics combining sales, logistics, and estimated marketing CAC."
+    columns:
+      - name: order_id
+        tests:
+          - not_null
+          - unique
+      - name: order_date
+        tests:
+          - not_null
+      - name: vertical
+        tests:
+          - not_null
+      - name: revenue_pkr
+        tests:
+          - not_null
+      - name: net_profit_pkr
+        tests:
+          - not_null

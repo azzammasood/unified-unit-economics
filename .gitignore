@@ -1,0 +1,16 @@
+.venv/
+__pycache__/
+*.pyc
+
+data_gen/output/
+
+dbt_project/target/
+dbt_project/dbt_packages/
+dbt_project/logs/
+
+dashboard/node_modules/
+dashboard/build/
+dashboard/.svelte-kit/
+dashboard/.evidence/
+
+.DS_Store
