@@ -41,7 +41,7 @@ jobs:
           DBT_PROFILES_DIR: ${{ github.workspace }}/dbt_project
         run: |
           dbt --version
-          dbt build --project-dir dbt_project
+          dbt build --project-dir dbt_project --threads 1
 
       - name: Set up Node
         uses: actions/setup-node@v4
