@@ -8,7 +8,8 @@
   },
   "dependencies": {
     "@evidence-dev/evidence": "^40.0.0",
-    "@evidence-dev/tailwind": "^3.1.4"
+    "@evidence-dev/tailwind": "^3.1.4",
+    "@evidence-dev/core-components": "5.4.2"
   },
   "devDependencies": {
     "typescript": "5.4.2",

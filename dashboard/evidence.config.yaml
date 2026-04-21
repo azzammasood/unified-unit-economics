@@ -2,5 +2,6 @@ deployment:
   type: static
 
 plugins:
-  components: {}
+  components:
+    "@evidence-dev/core-components": {}
 
