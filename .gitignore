@@ -3,10 +3,13 @@ __pycache__/
 *.pyc
 
 data_gen/output/
+warehouse.duckdb
+*.duckdb
 
 dbt_project/target/
 dbt_project/dbt_packages/
 dbt_project/logs/
+dbt_project/.user.yml
 
 dashboard/node_modules/
 dashboard/build/

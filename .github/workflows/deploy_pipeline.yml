@@ -18,8 +18,7 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     env:
-      MOTHERDUCK_TOKEN: ${{ secrets.MOTHERDUCK_TOKEN }}
-      MOTHERDUCK_DATABASE: ${{ secrets.MOTHERDUCK_DATABASE }}
+      DUCKDB_PATH: ${{ github.workspace }}/warehouse.duckdb
     steps:
       - uses: actions/checkout@v4
 
@@ -33,7 +32,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Generate synthetic CSVs (+ ingest to MotherDuck)
+      - name: Generate synthetic CSVs (+ ingest to DuckDB file)
         run: |
           python data_gen/generator.py
 
@@ -59,8 +58,7 @@ jobs:
       - name: Build Evidence static site
         working-directory: dashboard
         env:
-          MOTHERDUCK_TOKEN: ${{ secrets.MOTHERDUCK_TOKEN }}
-          MOTHERDUCK_DATABASE: ${{ secrets.MOTHERDUCK_DATABASE }}
+          DUCKDB_PATH: ${{ github.workspace }}/warehouse.duckdb
         run: |
           npm run build
 

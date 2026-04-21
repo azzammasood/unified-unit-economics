@@ -1,4 +1,4 @@
 type: duckdb
 options:
-  filename: "md:${MOTHERDUCK_DATABASE}?motherduck_token=${MOTHERDUCK_TOKEN}"
+  filename: "${DUCKDB_PATH}"
   schema: analytics

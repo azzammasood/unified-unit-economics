@@ -3,6 +3,6 @@ unified_unit_economics:
   outputs:
     dev:
       type: duckdb
-      path: "md:{{ env_var('MOTHERDUCK_DATABASE', 'unified_unit_economics') }}?motherduck_token={{ env_var('MOTHERDUCK_TOKEN') }}"
+      path: "{{ env_var('DUCKDB_PATH', 'warehouse.duckdb') }}"
       schema: analytics
       threads: 4

@@ -15,8 +15,7 @@ class Config:
     n_orders: int = 5000
     start_date: str = "2026-01-01"
     end_date: str = "2026-03-31"
-    motherduck_database: str | None = None
-    motherduck_token: str | None = None
+    warehouse_path: Path = Path(__file__).resolve().parents[1] / "warehouse.duckdb"
 
 
 def _rng(seed: int = 42) -> np.random.Generator:
@@ -190,6 +189,31 @@ def _copy_csv_to_table(con: duckdb.DuckDBPyConnection, csv_path: Path, schema: s
         """
     )
 
+def _connect_duckdb_file(path: Path) -> duckdb.DuckDBPyConnection:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    return duckdb.connect(str(path))
+
+
+def _ingest_csv_with_copy(con: duckdb.DuckDBPyConnection, csv_path: Path, schema: str, table: str) -> None:
+    con.execute(f"CREATE SCHEMA IF NOT EXISTS {schema};")
+    con.execute(f"DROP TABLE IF EXISTS {schema}.{table};")
+    # Create table schema by inference, then load via COPY for speed.
+    con.execute(
+        f"""
+        CREATE TABLE {schema}.{table} AS
+        SELECT *
+        FROM read_csv_auto('{str(csv_path)}', HEADER=TRUE, ALL_VARCHAR=TRUE)
+        LIMIT 0;
+        """
+    )
+    con.execute(
+        f"""
+        COPY {schema}.{table}
+        FROM '{str(csv_path)}'
+        (HEADER TRUE);
+        """
+    )
+
 
 def main() -> None:
     cfg = Config(
@@ -197,8 +221,7 @@ def main() -> None:
         n_orders=int(os.getenv("N_ORDERS", str(Config.n_orders))),
         start_date=os.getenv("START_DATE", Config.start_date),
         end_date=os.getenv("END_DATE", Config.end_date),
-        motherduck_database=os.getenv("MOTHERDUCK_DATABASE"),
-        motherduck_token=os.getenv("MOTHERDUCK_TOKEN"),
+        warehouse_path=Path(os.getenv("DUCKDB_PATH", str(Config.warehouse_path))),
     )
 
     cfg.out_dir.mkdir(parents=True, exist_ok=True)
@@ -212,16 +235,12 @@ def main() -> None:
     print(f"Wrote {marketing_path}")
     print(f"Wrote {logistics_path}")
 
-    # Optional: ingest to MotherDuck (fast path for CI)
-    if cfg.motherduck_database and cfg.motherduck_token:
-        con = _connect_motherduck(cfg.motherduck_database, cfg.motherduck_token)
-        _copy_csv_to_table(con, sales_path, "raw", "sales")
-        _copy_csv_to_table(con, marketing_path, "raw", "marketing")
-        _copy_csv_to_table(con, logistics_path, "raw", "logistics")
-        con.close()
-        print("Ingested CSVs into MotherDuck schema raw.*")
-    else:
-        print("Skipping MotherDuck ingest (set MOTHERDUCK_DATABASE and MOTHERDUCK_TOKEN to enable).")
+    con = _connect_duckdb_file(cfg.warehouse_path)
+    _ingest_csv_with_copy(con, sales_path, "raw", "sales")
+    _ingest_csv_with_copy(con, marketing_path, "raw", "marketing")
+    _ingest_csv_with_copy(con, logistics_path, "raw", "logistics")
+    con.close()
+    print(f"Ingested CSVs into DuckDB at {cfg.warehouse_path} (schema raw.*)")
 
 
 if __name__ == "__main__":
