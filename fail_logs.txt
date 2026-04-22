@@ -1,0 +1,85 @@
+build-and-deploy	Build Evidence static site	﻿2026-04-22T18:20:43.5833164Z ##[group]Run echo "== Evidence config debug =="
+build-and-deploy	Build Evidence static site	2026-04-22T18:20:43.5833736Z [36;1mecho "== Evidence config debug =="[0m
+build-and-deploy	Build Evidence static site	2026-04-22T18:20:43.5834161Z [36;1mpwd[0m
+build-and-deploy	Build Evidence static site	2026-04-22T18:20:43.5834454Z [36;1mls -la[0m
+build-and-deploy	Build Evidence static site	2026-04-22T18:20:43.5834780Z [36;1mecho "-- evidence.config.yaml --"[0m
+build-and-deploy	Build Evidence static site	2026-04-22T18:20:43.5835547Z [36;1m(test -f evidence.config.yaml && cat evidence.config.yaml) || echo "missing evidence.config.yaml"[0m
+build-and-deploy	Build Evidence static site	2026-04-22T18:20:43.5836288Z [36;1mecho "-- sources --"[0m
+build-and-deploy	Build Evidence static site	2026-04-22T18:20:43.5836676Z [36;1mls -la sources || true[0m
+build-and-deploy	Build Evidence static site	2026-04-22T18:20:43.5837062Z [36;1mecho "-- pages --"[0m
+build-and-deploy	Build Evidence static site	2026-04-22T18:20:43.5837438Z [36;1mls -la pages || true[0m
+build-and-deploy	Build Evidence static site	2026-04-22T18:20:43.5837836Z [36;1mecho "-- getEvidenceConfig() --"[0m
+build-and-deploy	Build Evidence static site	2026-04-22T18:20:43.5838793Z [36;1mnode -e "import { getEvidenceConfig } from '@evidence-dev/sdk/config'; console.log(JSON.stringify(getEvidenceConfig(), null, 2));"[0m
+build-and-deploy	Build Evidence static site	2026-04-22T18:20:43.5839937Z [36;1mnpx evidence sources[0m
+build-and-deploy	Build Evidence static site	2026-04-22T18:20:43.5840309Z [36;1mnpm run build[0m
+build-and-deploy	Build Evidence static site	2026-04-22T18:20:43.5896752Z shell: /usr/bin/bash -e {0}
+build-and-deploy	Build Evidence static site	2026-04-22T18:20:43.5897005Z env:
+build-and-deploy	Build Evidence static site	2026-04-22T18:20:43.5897395Z   DUCKDB_PATH: /home/runner/work/unified-unit-economics/unified-unit-economics/warehouse.duckdb
+build-and-deploy	Build Evidence static site	2026-04-22T18:20:43.5897941Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.15/x64
+build-and-deploy	Build Evidence static site	2026-04-22T18:20:43.5898384Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.15/x64/lib/pkgconfig
+build-and-deploy	Build Evidence static site	2026-04-22T18:20:43.5898805Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.15/x64
+build-and-deploy	Build Evidence static site	2026-04-22T18:20:43.5899173Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.15/x64
+build-and-deploy	Build Evidence static site	2026-04-22T18:20:43.5899542Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.15/x64
+build-and-deploy	Build Evidence static site	2026-04-22T18:20:43.5900147Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.15/x64/lib
+build-and-deploy	Build Evidence static site	2026-04-22T18:20:43.5900471Z ##[endgroup]
+build-and-deploy	Build Evidence static site	2026-04-22T18:20:43.5975575Z == Evidence config debug ==
+build-and-deploy	Build Evidence static site	2026-04-22T18:20:43.5976181Z /home/runner/work/unified-unit-economics/unified-unit-economics/dashboard
+build-and-deploy	Build Evidence static site	2026-04-22T18:20:43.5989538Z total 440
+build-and-deploy	Build Evidence static site	2026-04-22T18:20:43.5990289Z drwxr-xr-x   6 runner runner   4096 Apr 22 18:20 .
+build-and-deploy	Build Evidence static site	2026-04-22T18:20:43.5990967Z drwxr-xr-x   7 runner runner   4096 Apr 22 18:20 ..
+build-and-deploy	Build Evidence static site	2026-04-22T18:20:43.5991523Z -rw-r--r--   1 runner runner   2535 Apr 22 18:19 app.css
+build-and-deploy	Build Evidence static site	2026-04-22T18:20:43.5992185Z drwxr-xr-x   2 runner runner   4096 Apr 22 18:19 components
+build-and-deploy	Build Evidence static site	2026-04-22T18:20:43.5993002Z -rw-r--r--   1 runner runner    110 Apr 22 18:19 evidence.config.yaml
+build-and-deploy	Build Evidence static site	2026-04-22T18:20:43.5993863Z -rw-r--r--   1 runner runner   2474 Apr 22 18:19 index.md
+build-and-deploy	Build Evidence static site	2026-04-22T18:20:43.5994688Z drwxr-xr-x 571 runner runner  20480 Apr 22 18:20 node_modules
+build-and-deploy	Build Evidence static site	2026-04-22T18:20:43.5995611Z -rw-r--r--   1 runner runner   1279 Apr 22 18:19 orders.md
+build-and-deploy	Build Evidence static site	2026-04-22T18:20:43.5996495Z -rw-r--r--   1 runner runner 386248 Apr 22 18:20 package-lock.json
+build-and-deploy	Build Evidence static site	2026-04-22T18:20:43.5997098Z -rw-r--r--   1 runner runner    808 Apr 22 18:19 package.json
+build-and-deploy	Build Evidence static site	2026-04-22T18:20:43.5997618Z drwxr-xr-x   2 runner runner   4096 Apr 22 18:19 pages
+build-and-deploy	Build Evidence static site	2026-04-22T18:20:43.5998138Z drwxr-xr-x   3 runner runner   4096 Apr 22 18:19 sources
+build-and-deploy	Build Evidence static site	2026-04-22T18:20:43.5998546Z -- evidence.config.yaml --
+build-and-deploy	Build Evidence static site	2026-04-22T18:20:43.6003795Z plugins:
+build-and-deploy	Build Evidence static site	2026-04-22T18:20:43.6004095Z   components:
+build-and-deploy	Build Evidence static site	2026-04-22T18:20:43.6004364Z     "@evidence-dev/core-components": {}
+build-and-deploy	Build Evidence static site	2026-04-22T18:20:43.6004731Z   datasources:
+build-and-deploy	Build Evidence static site	2026-04-22T18:20:43.6005149Z     "@evidence-dev/duckdb": {}
+build-and-deploy	Build Evidence static site	2026-04-22T18:20:43.6005704Z 
+build-and-deploy	Build Evidence static site	2026-04-22T18:20:43.6005884Z -- sources --
+build-and-deploy	Build Evidence static site	2026-04-22T18:20:43.6017724Z total 12
+build-and-deploy	Build Evidence static site	2026-04-22T18:20:43.6018200Z drwxr-xr-x 3 runner runner 4096 Apr 22 18:19 .
+build-and-deploy	Build Evidence static site	2026-04-22T18:20:43.6018622Z drwxr-xr-x 6 runner runner 4096 Apr 22 18:20 ..
+build-and-deploy	Build Evidence static site	2026-04-22T18:20:43.6019158Z drwxr-xr-x 2 runner runner 4096 Apr 22 18:19 motherduck
+build-and-deploy	Build Evidence static site	2026-04-22T18:20:43.6019975Z -- pages --
+build-and-deploy	Build Evidence static site	2026-04-22T18:20:43.6032133Z total 16
+build-and-deploy	Build Evidence static site	2026-04-22T18:20:43.6032622Z drwxr-xr-x 2 runner runner 4096 Apr 22 18:19 .
+build-and-deploy	Build Evidence static site	2026-04-22T18:20:43.6033288Z drwxr-xr-x 6 runner runner 4096 Apr 22 18:20 ..
+build-and-deploy	Build Evidence static site	2026-04-22T18:20:43.6034044Z -rw-r--r-- 1 runner runner 3708 Apr 22 18:19 index.md
+build-and-deploy	Build Evidence static site	2026-04-22T18:20:43.6034801Z -rw-r--r-- 1 runner runner 2632 Apr 22 18:19 orders.md
+build-and-deploy	Build Evidence static site	2026-04-22T18:20:43.6035731Z -- getEvidenceConfig() --
+build-and-deploy	Build Evidence static site	2026-04-22T18:20:43.6946086Z {
+build-and-deploy	Build Evidence static site	2026-04-22T18:20:43.6946596Z   "plugins": {
+build-and-deploy	Build Evidence static site	2026-04-22T18:20:43.6947025Z     "components": {
+build-and-deploy	Build Evidence static site	2026-04-22T18:20:43.6947546Z       "@evidence-dev/core-components": {
+build-and-deploy	Build Evidence static site	2026-04-22T18:20:43.6948152Z         "overrides": [],
+build-and-deploy	Build Evidence static site	2026-04-22T18:20:43.6948573Z         "aliases": {},
+build-and-deploy	Build Evidence static site	2026-04-22T18:20:43.6948974Z         "provides": []
+build-and-deploy	Build Evidence static site	2026-04-22T18:20:43.6949371Z       }
+build-and-deploy	Build Evidence static site	2026-04-22T18:20:43.6949969Z     },
+build-and-deploy	Build Evidence static site	2026-04-22T18:20:43.6950362Z     "datasources": {
+build-and-deploy	Build Evidence static site	2026-04-22T18:20:43.6950839Z       "@evidence-dev/duckdb": {}
+build-and-deploy	Build Evidence static site	2026-04-22T18:20:43.6951289Z     }
+build-and-deploy	Build Evidence static site	2026-04-22T18:20:43.6951610Z   },
+build-and-deploy	Build Evidence static site	2026-04-22T18:20:43.6951929Z   "deployment": {
+build-and-deploy	Build Evidence static site	2026-04-22T18:20:43.6952323Z     "basePath": ""
+build-and-deploy	Build Evidence static site	2026-04-22T18:20:43.6952684Z   }
+build-and-deploy	Build Evidence static site	2026-04-22T18:20:43.6953002Z }
+build-and-deploy	Build Evidence static site	2026-04-22T18:20:44.8108565Z - Loading plugins & sources
+build-and-deploy	Build Evidence static site	2026-04-22T18:20:44.8611061Z ✖ Loading plugins & sources
+build-and-deploy	Build Evidence static site	2026-04-22T18:20:44.8615518Z [ ! ] Unable to load connection.yaml
+build-and-deploy	Build Evidence static site	2026-04-22T18:20:44.8619927Z       [!] connection.yaml has errors (/home/runner/work/unified-unit-economics/unified-unit-economics/dashboard/sources/motherduck
+build-and-deploy	Build Evidence static site	2026-04-22T18:20:44.8621029Z       |   Discovered Errors:
+build-and-deploy	Build Evidence static site	2026-04-22T18:20:44.8621452Z       |   name:
+build-and-deploy	Build Evidence static site	2026-04-22T18:20:44.8621710Z |     errors:
+build-and-deploy	Build Evidence static site	2026-04-22T18:20:44.8622062Z |       - Required
+build-and-deploy	Build Evidence static site	2026-04-22T18:20:44.8622488Z |   
+build-and-deploy	Build Evidence static site	2026-04-22T18:20:44.8827600Z ##[error]Process completed with exit code 1.

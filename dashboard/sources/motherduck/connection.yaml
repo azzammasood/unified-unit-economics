@@ -1,3 +1,4 @@
+name: motherduck
 type: duckdb
 options:
   filename: "${DUCKDB_PATH}"
