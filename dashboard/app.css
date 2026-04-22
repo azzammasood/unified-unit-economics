@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --evidence-brand-color: #3b82f6;
+  --evidence-background-color: #0f172a;
+  --evidence-text-color: #f8fafc;
+  --evidence-font-family: 'Inter', sans-serif;
+  --evidence-heading-font-family: 'Outfit', sans-serif;
+  
+  --evidence-chart-color-1: #60a5fa;
+  --evidence-chart-color-2: #34d399;
+  --evidence-chart-color-3: #f472b6;
+  --evidence-chart-color-4: #fbbf24;
+  --evidence-chart-color-5: #a78bfa;
+}
+
+body {
+  font-family: var(--evidence-font-family);
+  background: linear-gradient(135deg, #020617 0%, #0f172a 100%);
+  color: var(--evidence-text-color);
+  min-height: 100vh;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--evidence-heading-font-family) !important;
+  color: #f8fafc !important;
+  letter-spacing: -0.02em;
+}
+
+h1 {
+  background: -webkit-linear-gradient(45deg, #60a5fa, #a78bfa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700 !important;
+}
+
+/* Glassmorphism for Evidence components */
+.evidence-component, .evidence-table, .evidence-chart {
+  background: rgba(30, 41, 59, 0.4) !important;
+  border-radius: 16px !important;
+  backdrop-filter: blur(12px) !important;
+  -webkit-backdrop-filter: blur(12px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.05) !important;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1) !important;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.evidence-component:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2) !important;
+}
+
+/* Customizing value cards */
+.evidence-value-card {
+  background: linear-gradient(145deg, rgba(30, 41, 59, 0.6), rgba(15, 23, 42, 0.8)) !important;
+  border-left: 4px solid var(--evidence-brand-color) !important;
+}
+
+/* Custom table styling */
+th {
+  background-color: rgba(15, 23, 42, 0.8) !important;
+  color: #94a3b8 !important;
+  font-weight: 600 !important;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+}
+
+td {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05) !important;
+}
+
+tr:hover td {
+  background-color: rgba(255, 255, 255, 0.02) !important;
+}
+
+/* Fix sidebar/nav links */
+nav a {
+  color: #94a3b8 !important;
+  transition: color 0.2s ease, background 0.2s ease !important;
+}
+
+nav a:hover, nav a.active {
+  color: #f8fafc !important;
+  background: rgba(255, 255, 255, 0.05) !important;
+  border-radius: 8px;
+}

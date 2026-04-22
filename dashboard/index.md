@@ -5,7 +5,7 @@ title: Unit Economics Executive Report
 ```sql total_profit
 select
   round(sum(net_profit_pkr), 0) as total_net_profit_pkr
-from analytics.marts_fct_unit_economics
+from motherduck.fct_unit_economics
 ```
 
 ```sql margin_by_vertical
@@ -13,7 +13,7 @@ select
   vertical,
   round(sum(net_profit_pkr), 0) as net_profit_pkr,
   round(100 * avg(net_margin_pct), 2) as avg_margin_pct
-from analytics.marts_fct_unit_economics
+from motherduck.fct_unit_economics
 group by 1
 order by net_profit_pkr desc
 ```
@@ -60,7 +60,7 @@ with m as (
     sum(spend_pkr) as spend_pkr,
     sum(conversions) as conversions,
     case when sum(conversions) > 0 then sum(spend_pkr) / sum(conversions) else null end as cac_pkr
-  from analytics.staging_stg_marketing
+  from motherduck.stg_marketing
   group by 1, 2
 ),
 rev as (

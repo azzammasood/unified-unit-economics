@@ -8,7 +8,7 @@ This workbook is designed for analysts: filter, compare cohorts, and drill into 
 
 ```sql filtered_base
 select *
-from analytics.marts_fct_unit_economics
+from motherduck.fct_unit_economics
 ```
 
 ```sql kpis
@@ -87,7 +87,7 @@ with m as (
     sum(spend_pkr) as spend_pkr,
     sum(conversions) as conversions,
     case when sum(conversions) > 0 then sum(spend_pkr) / sum(conversions) else null end as cac_pkr
-  from analytics.staging_stg_marketing
+  from motherduck.stg_marketing
   group by 1, 2
 ),
 rev as (

@@ -10,7 +10,7 @@ This page is designed for analysts to investigate distribution + outliers. It an
 
 ```sql base
 select *
-from analytics.marts_fct_unit_economics
+from motherduck.fct_unit_economics
 ```
 
 ```sql vertical_rollup

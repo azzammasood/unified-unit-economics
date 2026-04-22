@@ -19,7 +19,7 @@ select
   round(sum(estimated_marketing_cac_pkr), 0) as marketing_cac_pkr,
   round(sum(net_profit_pkr), 0) as net_profit_pkr,
   round(100 * avg(net_margin_pct), 2) as avg_margin_pct
-from analytics.marts_fct_unit_economics
+from motherduck.fct_unit_economics
 group by 1
 order by net_profit_pkr desc
 ```
@@ -39,7 +39,7 @@ select
   estimated_marketing_cac_pkr,
   net_profit_pkr,
   round(100 * net_margin_pct, 2) as net_margin_pct
-from analytics.marts_fct_unit_economics
+from motherduck.fct_unit_economics
 order by net_profit_pkr asc
 limit 25
 ```
