@@ -1,0 +1,1050 @@
+build-and-deploy	Set up job	﻿2026-04-22T18:13:27.1638239Z Current runner version: '2.333.1'
+build-and-deploy	Set up job	2026-04-22T18:13:27.1660519Z ##[group]Runner Image Provisioner
+build-and-deploy	Set up job	2026-04-22T18:13:27.1661323Z Hosted Compute Agent
+build-and-deploy	Set up job	2026-04-22T18:13:27.1661819Z Version: 20260213.493
+build-and-deploy	Set up job	2026-04-22T18:13:27.1662354Z Commit: 5c115507f6dd24b8de37d8bbe0bb4509d0cc0fa3
+build-and-deploy	Set up job	2026-04-22T18:13:27.1662998Z Build Date: 2026-02-13T00:28:41Z
+build-and-deploy	Set up job	2026-04-22T18:13:27.1663557Z Worker ID: {e5533a29-9892-472c-8a1c-5328581f5155}
+build-and-deploy	Set up job	2026-04-22T18:13:27.1664201Z Azure Region: westcentralus
+build-and-deploy	Set up job	2026-04-22T18:13:27.1664724Z ##[endgroup]
+build-and-deploy	Set up job	2026-04-22T18:13:27.1666109Z ##[group]Operating System
+build-and-deploy	Set up job	2026-04-22T18:13:27.1666682Z Ubuntu
+build-and-deploy	Set up job	2026-04-22T18:13:27.1667079Z 24.04.4
+build-and-deploy	Set up job	2026-04-22T18:13:27.1667496Z LTS
+build-and-deploy	Set up job	2026-04-22T18:13:27.1667865Z ##[endgroup]
+build-and-deploy	Set up job	2026-04-22T18:13:27.1668370Z ##[group]Runner Image
+build-and-deploy	Set up job	2026-04-22T18:13:27.1668821Z Image: ubuntu-24.04
+build-and-deploy	Set up job	2026-04-22T18:13:27.1669272Z Version: 20260413.86.1
+build-and-deploy	Set up job	2026-04-22T18:13:27.1670159Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260413.86/images/ubuntu/Ubuntu2404-Readme.md
+build-and-deploy	Set up job	2026-04-22T18:13:27.1671614Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260413.86
+build-and-deploy	Set up job	2026-04-22T18:13:27.1672405Z ##[endgroup]
+build-and-deploy	Set up job	2026-04-22T18:13:27.1673361Z ##[group]GITHUB_TOKEN Permissions
+build-and-deploy	Set up job	2026-04-22T18:13:27.1675093Z Contents: read
+build-and-deploy	Set up job	2026-04-22T18:13:27.1675543Z Metadata: read
+build-and-deploy	Set up job	2026-04-22T18:13:27.1676146Z Pages: write
+build-and-deploy	Set up job	2026-04-22T18:13:27.1676661Z ##[endgroup]
+build-and-deploy	Set up job	2026-04-22T18:13:27.1678880Z Secret source: Actions
+build-and-deploy	Set up job	2026-04-22T18:13:27.1679522Z Prepare workflow directory
+build-and-deploy	Set up job	2026-04-22T18:13:27.2219492Z Prepare all required actions
+build-and-deploy	Set up job	2026-04-22T18:13:27.2255540Z Getting action download info
+build-and-deploy	Set up job	2026-04-22T18:13:27.8833247Z Download action repository 'actions/checkout@v4' (SHA:34e114876b0b11c390a56381ad16ebd13914f8d5)
+build-and-deploy	Set up job	2026-04-22T18:13:28.0164565Z Download action repository 'actions/setup-python@v5' (SHA:a26af69be951a213d495a4c3e4e4022e16d87065)
+build-and-deploy	Set up job	2026-04-22T18:13:28.0811720Z Download action repository 'actions/setup-node@v4' (SHA:49933ea5288caeca8642d1e84afbd3f7d6820020)
+build-and-deploy	Set up job	2026-04-22T18:13:28.1529892Z Download action repository 'actions/configure-pages@v5' (SHA:983d7736d9b0ae728b81ab479565c72886d7745b)
+build-and-deploy	Set up job	2026-04-22T18:13:28.9382454Z Download action repository 'actions/upload-pages-artifact@v3' (SHA:56afc609e74202658d3ffba0e8f6dda462b719fa)
+build-and-deploy	Set up job	2026-04-22T18:13:29.5395862Z Download action repository 'actions/deploy-pages@v4' (SHA:d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e)
+build-and-deploy	Set up job	2026-04-22T18:13:30.6566259Z Getting action download info
+build-and-deploy	Set up job	2026-04-22T18:13:30.8106752Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+build-and-deploy	Set up job	2026-04-22T18:13:30.9226646Z Complete job name: build-and-deploy
+build-and-deploy	Run actions/checkout@v4	﻿2026-04-22T18:13:30.9727093Z ##[group]Run actions/checkout@v4
+build-and-deploy	Run actions/checkout@v4	2026-04-22T18:13:30.9727587Z with:
+build-and-deploy	Run actions/checkout@v4	2026-04-22T18:13:30.9727830Z   repository: azzammasood/unified-unit-economics
+build-and-deploy	Run actions/checkout@v4	2026-04-22T18:13:30.9728271Z   token: ***
+build-and-deploy	Run actions/checkout@v4	2026-04-22T18:13:30.9728445Z   ssh-strict: true
+build-and-deploy	Run actions/checkout@v4	2026-04-22T18:13:30.9728629Z   ssh-user: git
+build-and-deploy	Run actions/checkout@v4	2026-04-22T18:13:30.9728831Z   persist-credentials: true
+build-and-deploy	Run actions/checkout@v4	2026-04-22T18:13:30.9729060Z   clean: true
+build-and-deploy	Run actions/checkout@v4	2026-04-22T18:13:30.9729253Z   sparse-checkout-cone-mode: true
+build-and-deploy	Run actions/checkout@v4	2026-04-22T18:13:30.9729480Z   fetch-depth: 1
+build-and-deploy	Run actions/checkout@v4	2026-04-22T18:13:30.9729649Z   fetch-tags: false
+build-and-deploy	Run actions/checkout@v4	2026-04-22T18:13:30.9729836Z   show-progress: true
+build-and-deploy	Run actions/checkout@v4	2026-04-22T18:13:30.9730016Z   lfs: false
+build-and-deploy	Run actions/checkout@v4	2026-04-22T18:13:30.9730177Z   submodules: false
+build-and-deploy	Run actions/checkout@v4	2026-04-22T18:13:30.9730365Z   set-safe-directory: true
+build-and-deploy	Run actions/checkout@v4	2026-04-22T18:13:30.9730687Z env:
+build-and-deploy	Run actions/checkout@v4	2026-04-22T18:13:30.9731044Z   DUCKDB_PATH: /home/runner/work/unified-unit-economics/unified-unit-economics/warehouse.duckdb
+build-and-deploy	Run actions/checkout@v4	2026-04-22T18:13:30.9731453Z ##[endgroup]
+build-and-deploy	Run actions/checkout@v4	2026-04-22T18:13:31.0743129Z Syncing repository: azzammasood/unified-unit-economics
+build-and-deploy	Run actions/checkout@v4	2026-04-22T18:13:31.0745204Z ##[group]Getting Git version info
+build-and-deploy	Run actions/checkout@v4	2026-04-22T18:13:31.0746167Z Working directory is '/home/runner/work/unified-unit-economics/unified-unit-economics'
+build-and-deploy	Run actions/checkout@v4	2026-04-22T18:13:31.0747264Z [command]/usr/bin/git version
+build-and-deploy	Run actions/checkout@v4	2026-04-22T18:13:31.0769266Z git version 2.53.0
+build-and-deploy	Run actions/checkout@v4	2026-04-22T18:13:31.0792030Z ##[endgroup]
+build-and-deploy	Run actions/checkout@v4	2026-04-22T18:13:31.0811352Z Temporarily overriding HOME='/home/runner/work/_temp/ff62c0e5-8787-48c9-97e1-6d676227225a' before making global git config changes
+build-and-deploy	Run actions/checkout@v4	2026-04-22T18:13:31.0812323Z Adding repository directory to the temporary git global config as a safe directory
+build-and-deploy	Run actions/checkout@v4	2026-04-22T18:13:31.0816877Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/unified-unit-economics/unified-unit-economics
+build-and-deploy	Run actions/checkout@v4	2026-04-22T18:13:31.0845454Z Deleting the contents of '/home/runner/work/unified-unit-economics/unified-unit-economics'
+build-and-deploy	Run actions/checkout@v4	2026-04-22T18:13:31.0848630Z ##[group]Initializing the repository
+build-and-deploy	Run actions/checkout@v4	2026-04-22T18:13:31.0852450Z [command]/usr/bin/git init /home/runner/work/unified-unit-economics/unified-unit-economics
+build-and-deploy	Run actions/checkout@v4	2026-04-22T18:13:31.0920050Z hint: Using 'master' as the name for the initial branch. This default branch name
+build-and-deploy	Run actions/checkout@v4	2026-04-22T18:13:31.0920916Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+build-and-deploy	Run actions/checkout@v4	2026-04-22T18:13:31.0921499Z hint: to use in all of your new repositories, which will suppress this warning,
+build-and-deploy	Run actions/checkout@v4	2026-04-22T18:13:31.0921998Z hint: call:
+build-and-deploy	Run actions/checkout@v4	2026-04-22T18:13:31.0922163Z hint:
+build-and-deploy	Run actions/checkout@v4	2026-04-22T18:13:31.0922456Z hint: 	git config --global init.defaultBranch <name>
+build-and-deploy	Run actions/checkout@v4	2026-04-22T18:13:31.0922893Z hint:
+build-and-deploy	Run actions/checkout@v4	2026-04-22T18:13:31.0923341Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+build-and-deploy	Run actions/checkout@v4	2026-04-22T18:13:31.0924125Z hint: 'development'. The just-created branch can be renamed via this command:
+build-and-deploy	Run actions/checkout@v4	2026-04-22T18:13:31.0924709Z hint:
+build-and-deploy	Run actions/checkout@v4	2026-04-22T18:13:31.0924962Z hint: 	git branch -m <name>
+build-and-deploy	Run actions/checkout@v4	2026-04-22T18:13:31.0925305Z hint:
+build-and-deploy	Run actions/checkout@v4	2026-04-22T18:13:31.0925918Z hint: Disable this message with "git config set advice.defaultBranchName false"
+build-and-deploy	Run actions/checkout@v4	2026-04-22T18:13:31.0926972Z Initialized empty Git repository in /home/runner/work/unified-unit-economics/unified-unit-economics/.git/
+build-and-deploy	Run actions/checkout@v4	2026-04-22T18:13:31.0930882Z [command]/usr/bin/git remote add origin https://github.com/azzammasood/unified-unit-economics
+build-and-deploy	Run actions/checkout@v4	2026-04-22T18:13:31.0953445Z ##[endgroup]
+build-and-deploy	Run actions/checkout@v4	2026-04-22T18:13:31.0954068Z ##[group]Disabling automatic garbage collection
+build-and-deploy	Run actions/checkout@v4	2026-04-22T18:13:31.0957441Z [command]/usr/bin/git config --local gc.auto 0
+build-and-deploy	Run actions/checkout@v4	2026-04-22T18:13:31.0978716Z ##[endgroup]
+build-and-deploy	Run actions/checkout@v4	2026-04-22T18:13:31.0979259Z ##[group]Setting up auth
+build-and-deploy	Run actions/checkout@v4	2026-04-22T18:13:31.0985043Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+build-and-deploy	Run actions/checkout@v4	2026-04-22T18:13:31.1009182Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+build-and-deploy	Run actions/checkout@v4	2026-04-22T18:13:31.1228692Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+build-and-deploy	Run actions/checkout@v4	2026-04-22T18:13:31.1252818Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+build-and-deploy	Run actions/checkout@v4	2026-04-22T18:13:31.1431196Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+build-and-deploy	Run actions/checkout@v4	2026-04-22T18:13:31.1468015Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+build-and-deploy	Run actions/checkout@v4	2026-04-22T18:13:31.1637990Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+build-and-deploy	Run actions/checkout@v4	2026-04-22T18:13:31.1665073Z ##[endgroup]
+build-and-deploy	Run actions/checkout@v4	2026-04-22T18:13:31.1665837Z ##[group]Fetching the repository
+build-and-deploy	Run actions/checkout@v4	2026-04-22T18:13:31.1674191Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +6734df2a74655aae1aee1b79e484a7002faa44c8:refs/remotes/origin/main
+build-and-deploy	Run actions/checkout@v4	2026-04-22T18:13:31.8034203Z From https://github.com/azzammasood/unified-unit-economics
+build-and-deploy	Run actions/checkout@v4	2026-04-22T18:13:31.8035613Z  * [new ref]         6734df2a74655aae1aee1b79e484a7002faa44c8 -> origin/main
+build-and-deploy	Run actions/checkout@v4	2026-04-22T18:13:31.8057065Z ##[endgroup]
+build-and-deploy	Run actions/checkout@v4	2026-04-22T18:13:31.8057644Z ##[group]Determining the checkout info
+build-and-deploy	Run actions/checkout@v4	2026-04-22T18:13:31.8059574Z ##[endgroup]
+build-and-deploy	Run actions/checkout@v4	2026-04-22T18:13:31.8065108Z [command]/usr/bin/git sparse-checkout disable
+build-and-deploy	Run actions/checkout@v4	2026-04-22T18:13:31.8096269Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+build-and-deploy	Run actions/checkout@v4	2026-04-22T18:13:31.8120607Z ##[group]Checking out the ref
+build-and-deploy	Run actions/checkout@v4	2026-04-22T18:13:31.8121328Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+build-and-deploy	Run actions/checkout@v4	2026-04-22T18:13:31.8159085Z Switched to a new branch 'main'
+build-and-deploy	Run actions/checkout@v4	2026-04-22T18:13:31.8160345Z branch 'main' set up to track 'origin/main'.
+build-and-deploy	Run actions/checkout@v4	2026-04-22T18:13:31.8165265Z ##[endgroup]
+build-and-deploy	Run actions/checkout@v4	2026-04-22T18:13:31.8194382Z [command]/usr/bin/git log -1 --format=%H
+build-and-deploy	Run actions/checkout@v4	2026-04-22T18:13:31.8211789Z 6734df2a74655aae1aee1b79e484a7002faa44c8
+build-and-deploy	Set up Python	﻿2026-04-22T18:13:31.8392266Z ##[group]Run actions/setup-python@v5
+build-and-deploy	Set up Python	2026-04-22T18:13:31.8392549Z with:
+build-and-deploy	Set up Python	2026-04-22T18:13:31.8392725Z   python-version: 3.11
+build-and-deploy	Set up Python	2026-04-22T18:13:31.8392934Z   check-latest: false
+build-and-deploy	Set up Python	2026-04-22T18:13:31.8393298Z   token: ***
+build-and-deploy	Set up Python	2026-04-22T18:13:31.8393482Z   update-environment: true
+build-and-deploy	Set up Python	2026-04-22T18:13:31.8393703Z   allow-prereleases: false
+build-and-deploy	Set up Python	2026-04-22T18:13:31.8393900Z   freethreaded: false
+build-and-deploy	Set up Python	2026-04-22T18:13:31.8394083Z env:
+build-and-deploy	Set up Python	2026-04-22T18:13:31.8394428Z   DUCKDB_PATH: /home/runner/work/unified-unit-economics/unified-unit-economics/warehouse.duckdb
+build-and-deploy	Set up Python	2026-04-22T18:13:31.8394857Z ##[endgroup]
+build-and-deploy	Set up Python	2026-04-22T18:13:31.9906058Z ##[group]Installed versions
+build-and-deploy	Set up Python	2026-04-22T18:13:31.9995486Z Successfully set up CPython (3.11.15)
+build-and-deploy	Set up Python	2026-04-22T18:13:31.9996497Z ##[endgroup]
+build-and-deploy	Install Python dependencies	﻿2026-04-22T18:13:32.0084515Z ##[group]Run python -m pip install --upgrade pip
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:32.0085010Z [36;1mpython -m pip install --upgrade pip[0m
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:32.0085344Z [36;1mpip install -r requirements.txt[0m
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:32.0109647Z shell: /usr/bin/bash -e {0}
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:32.0109909Z env:
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:32.0110283Z   DUCKDB_PATH: /home/runner/work/unified-unit-economics/unified-unit-economics/warehouse.duckdb
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:32.0110764Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.15/x64
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:32.0111151Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.15/x64/lib/pkgconfig
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:32.0111535Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.15/x64
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:32.0111881Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.15/x64
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:32.0112218Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.15/x64
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:32.0112551Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.15/x64/lib
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:32.0112838Z ##[endgroup]
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:32.5331409Z Requirement already satisfied: pip in /opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages (26.0.1)
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:33.4235644Z Collecting numpy==2.1.3 (from -r requirements.txt (line 1))
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:33.5250006Z   Downloading numpy-2.1.3-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (62 kB)
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:33.6611949Z Collecting pandas==2.2.3 (from -r requirements.txt (line 2))
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:33.6811045Z   Downloading pandas-2.2.3-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (89 kB)
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:34.0104696Z Collecting duckdb==1.1.3 (from -r requirements.txt (line 3))
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:34.0307480Z   Downloading duckdb-1.1.3-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (762 bytes)
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:34.0600596Z Collecting dbt-duckdb==1.9.1 (from -r requirements.txt (line 4))
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:34.0802805Z   Downloading dbt_duckdb-1.9.1-py3-none-any.whl.metadata (24 kB)
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:34.1126241Z Collecting python-dateutil>=2.8.2 (from pandas==2.2.3->-r requirements.txt (line 2))
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:34.1319385Z   Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:34.1737658Z Collecting pytz>=2020.1 (from pandas==2.2.3->-r requirements.txt (line 2))
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:34.1927521Z   Downloading pytz-2026.1.post1-py2.py3-none-any.whl.metadata (22 kB)
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:34.2234932Z Collecting tzdata>=2022.7 (from pandas==2.2.3->-r requirements.txt (line 2))
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:34.2434911Z   Downloading tzdata-2026.1-py2.py3-none-any.whl.metadata (1.4 kB)
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:34.2762057Z Collecting dbt-common<2,>=1 (from dbt-duckdb==1.9.1->-r requirements.txt (line 4))
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:34.2959385Z   Downloading dbt_common-1.37.3-py3-none-any.whl.metadata (4.9 kB)
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:34.3301131Z Collecting dbt-adapters<2,>=1 (from dbt-duckdb==1.9.1->-r requirements.txt (line 4))
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:34.3495389Z   Downloading dbt_adapters-1.22.10-py3-none-any.whl.metadata (4.5 kB)
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:34.3994763Z Collecting dbt-core>=1.8.0 (from dbt-duckdb==1.9.1->-r requirements.txt (line 4))
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:34.4183970Z   Downloading dbt_core-1.11.8-py3-none-any.whl.metadata (4.4 kB)
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:34.4484665Z Collecting agate<2.0,>=1.0 (from dbt-adapters<2,>=1->dbt-duckdb==1.9.1->-r requirements.txt (line 4))
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:34.4672182Z   Downloading agate-1.14.2-py3-none-any.whl.metadata (3.1 kB)
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:34.4966693Z Collecting dbt-protos<2.0,>=1.0.291 (from dbt-adapters<2,>=1->dbt-duckdb==1.9.1->-r requirements.txt (line 4))
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:34.5165324Z   Downloading dbt_protos-1.0.474-py3-none-any.whl.metadata (859 bytes)
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:34.5450049Z Collecting mashumaro<3.15,>=3.9 (from mashumaro[msgpack]<3.15,>=3.9->dbt-adapters<2,>=1->dbt-duckdb==1.9.1->-r requirements.txt (line 4))
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:34.5636429Z   Downloading mashumaro-3.14-py3-none-any.whl.metadata (114 kB)
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:34.7218354Z Collecting protobuf<7.0,>=6.0 (from dbt-adapters<2,>=1->dbt-duckdb==1.9.1->-r requirements.txt (line 4))
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:34.7413888Z   Downloading protobuf-6.33.6-cp39-abi3-manylinux2014_x86_64.whl.metadata (593 bytes)
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:34.7722831Z Collecting typing-extensions<5.0,>=4.0 (from dbt-adapters<2,>=1->dbt-duckdb==1.9.1->-r requirements.txt (line 4))
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:34.7916277Z   Downloading typing_extensions-4.15.0-py3-none-any.whl.metadata (3.3 kB)
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:34.8208833Z Collecting Babel>=2.0 (from agate<2.0,>=1.0->dbt-adapters<2,>=1->dbt-duckdb==1.9.1->-r requirements.txt (line 4))
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:34.8396571Z   Downloading babel-2.18.0-py3-none-any.whl.metadata (2.2 kB)
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:34.8668459Z Collecting isodate>=0.5.4 (from agate<2.0,>=1.0->dbt-adapters<2,>=1->dbt-duckdb==1.9.1->-r requirements.txt (line 4))
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:34.8856185Z   Downloading isodate-0.7.2-py3-none-any.whl.metadata (11 kB)
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:34.9129126Z Collecting leather>=0.3.2 (from agate<2.0,>=1.0->dbt-adapters<2,>=1->dbt-duckdb==1.9.1->-r requirements.txt (line 4))
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:34.9320674Z   Downloading leather-0.4.1-py3-none-any.whl.metadata (3.0 kB)
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:34.9583276Z Collecting parsedatetime!=2.5,>=2.1 (from agate<2.0,>=1.0->dbt-adapters<2,>=1->dbt-duckdb==1.9.1->-r requirements.txt (line 4))
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:34.9786359Z   Downloading parsedatetime-2.6-py3-none-any.whl.metadata (4.7 kB)
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:35.0314596Z Collecting python-slugify>=1.2.1 (from agate<2.0,>=1.0->dbt-adapters<2,>=1->dbt-duckdb==1.9.1->-r requirements.txt (line 4))
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:35.0510768Z   Downloading python_slugify-8.0.4-py2.py3-none-any.whl.metadata (8.5 kB)
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:35.0780937Z Collecting pytimeparse>=1.1.5 (from agate<2.0,>=1.0->dbt-adapters<2,>=1->dbt-duckdb==1.9.1->-r requirements.txt (line 4))
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:35.0989579Z   Downloading pytimeparse-1.1.8-py2.py3-none-any.whl.metadata (3.4 kB)
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:35.1029652Z Collecting agate<2.0,>=1.0 (from dbt-adapters<2,>=1->dbt-duckdb==1.9.1->-r requirements.txt (line 4))
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:35.1218285Z   Downloading agate-1.9.1-py2.py3-none-any.whl.metadata (3.2 kB)
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:35.1498909Z Collecting colorama<0.5,>=0.3.9 (from dbt-common<2,>=1->dbt-duckdb==1.9.1->-r requirements.txt (line 4))
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:35.1706772Z   Downloading colorama-0.4.6-py2.py3-none-any.whl.metadata (17 kB)
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:35.2054348Z Collecting deepdiff<9.0,>=7.0 (from dbt-common<2,>=1->dbt-duckdb==1.9.1->-r requirements.txt (line 4))
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:35.2245947Z   Downloading deepdiff-8.6.2-py3-none-any.whl.metadata (8.8 kB)
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:35.2571242Z Collecting jinja2<4,>=3.1.3 (from dbt-common<2,>=1->dbt-duckdb==1.9.1->-r requirements.txt (line 4))
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:35.2764382Z   Downloading jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:35.3112559Z Collecting jsonschema<5.0,>=4.0 (from dbt-common<2,>=1->dbt-duckdb==1.9.1->-r requirements.txt (line 4))
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:35.3304611Z   Downloading jsonschema-4.26.0-py3-none-any.whl.metadata (7.6 kB)
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:35.3600467Z Collecting pathspec<0.13,>=0.9 (from dbt-common<2,>=1->dbt-duckdb==1.9.1->-r requirements.txt (line 4))
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:35.3786484Z   Downloading pathspec-0.12.1-py3-none-any.whl.metadata (21 kB)
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:35.4209592Z Collecting requests<3.0.0 (from dbt-common<2,>=1->dbt-duckdb==1.9.1->-r requirements.txt (line 4))
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:35.4404482Z   Downloading requests-2.33.1-py3-none-any.whl.metadata (4.8 kB)
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:35.4726044Z Collecting orderly-set<6,>=5.4.1 (from deepdiff<9.0,>=7.0->dbt-common<2,>=1->dbt-duckdb==1.9.1->-r requirements.txt (line 4))
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:35.4918424Z   Downloading orderly_set-5.5.0-py3-none-any.whl.metadata (6.6 kB)
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:35.5493872Z Collecting MarkupSafe>=2.0 (from jinja2<4,>=3.1.3->dbt-common<2,>=1->dbt-duckdb==1.9.1->-r requirements.txt (line 4))
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:35.5683396Z   Downloading markupsafe-3.0.3-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.7 kB)
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:35.5959404Z Collecting attrs>=22.2.0 (from jsonschema<5.0,>=4.0->dbt-common<2,>=1->dbt-duckdb==1.9.1->-r requirements.txt (line 4))
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:35.6150845Z   Downloading attrs-26.1.0-py3-none-any.whl.metadata (8.8 kB)
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:35.6424236Z Collecting jsonschema-specifications>=2023.03.6 (from jsonschema<5.0,>=4.0->dbt-common<2,>=1->dbt-duckdb==1.9.1->-r requirements.txt (line 4))
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:35.6611796Z   Downloading jsonschema_specifications-2025.9.1-py3-none-any.whl.metadata (2.9 kB)
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:35.6939046Z Collecting referencing>=0.28.4 (from jsonschema<5.0,>=4.0->dbt-common<2,>=1->dbt-duckdb==1.9.1->-r requirements.txt (line 4))
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:35.7126922Z   Downloading referencing-0.37.0-py3-none-any.whl.metadata (2.8 kB)
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:35.9240268Z Collecting rpds-py>=0.25.0 (from jsonschema<5.0,>=4.0->dbt-common<2,>=1->dbt-duckdb==1.9.1->-r requirements.txt (line 4))
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:35.9438480Z   Downloading rpds_py-0.30.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.1 kB)
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:36.0473401Z Collecting msgpack>=0.5.6 (from mashumaro[msgpack]<3.15,>=3.9->dbt-adapters<2,>=1->dbt-duckdb==1.9.1->-r requirements.txt (line 4))
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:36.0663659Z   Downloading msgpack-1.1.2-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (8.1 kB)
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:36.0951911Z Collecting six>=1.5 (from python-dateutil>=2.8.2->pandas==2.2.3->-r requirements.txt (line 2))
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:36.1142913Z   Downloading six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:36.2037886Z Collecting charset_normalizer<4,>=2 (from requests<3.0.0->dbt-common<2,>=1->dbt-duckdb==1.9.1->-r requirements.txt (line 4))
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:36.2233264Z   Downloading charset_normalizer-3.4.7-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (40 kB)
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:36.2568775Z Collecting idna<4,>=2.5 (from requests<3.0.0->dbt-common<2,>=1->dbt-duckdb==1.9.1->-r requirements.txt (line 4))
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:36.2760192Z   Downloading idna-3.13-py3-none-any.whl.metadata (8.0 kB)
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:36.3094062Z Collecting urllib3<3,>=1.26 (from requests<3.0.0->dbt-common<2,>=1->dbt-duckdb==1.9.1->-r requirements.txt (line 4))
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:36.3290877Z   Downloading urllib3-2.6.3-py3-none-any.whl.metadata (6.9 kB)
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:36.3594915Z Collecting certifi>=2023.5.7 (from requests<3.0.0->dbt-common<2,>=1->dbt-duckdb==1.9.1->-r requirements.txt (line 4))
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:36.3782827Z   Downloading certifi-2026.4.22-py3-none-any.whl.metadata (2.5 kB)
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:36.4108129Z Collecting click<9.0,>=8.3.0 (from dbt-core>=1.8.0->dbt-duckdb==1.9.1->-r requirements.txt (line 4))
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:36.4303252Z   Downloading click-8.3.3-py3-none-any.whl.metadata (2.6 kB)
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:36.4552267Z Collecting daff>=1.3.46 (from dbt-core>=1.8.0->dbt-duckdb==1.9.1->-r requirements.txt (line 4))
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:36.4743116Z   Downloading daff-1.4.2-py3-none-any.whl.metadata (10 kB)
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:36.5120180Z Collecting dbt-extractor<=0.6,>=0.5.0 (from dbt-core>=1.8.0->dbt-duckdb==1.9.1->-r requirements.txt (line 4))
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:36.5309090Z   Downloading dbt_extractor-0.6.0-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.6 kB)
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:36.5623981Z Collecting dbt-semantic-interfaces<0.10,>=0.9.0 (from dbt-core>=1.8.0->dbt-duckdb==1.9.1->-r requirements.txt (line 4))
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:36.5812069Z   Downloading dbt_semantic_interfaces-0.9.0-py3-none-any.whl.metadata (2.6 kB)
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:36.6170439Z Collecting networkx<4.0,>=2.3 (from dbt-core>=1.8.0->dbt-duckdb==1.9.1->-r requirements.txt (line 4))
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:36.6362630Z   Downloading networkx-3.6.1-py3-none-any.whl.metadata (6.8 kB)
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:36.6675651Z Collecting packaging>20.9 (from dbt-core>=1.8.0->dbt-duckdb==1.9.1->-r requirements.txt (line 4))
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:36.6869658Z   Downloading packaging-26.1-py3-none-any.whl.metadata (3.5 kB)
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:36.7921009Z Collecting pydantic<3 (from dbt-core>=1.8.0->dbt-duckdb==1.9.1->-r requirements.txt (line 4))
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:36.8110940Z   Downloading pydantic-2.13.3-py3-none-any.whl.metadata (108 kB)
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:36.8826247Z Collecting pyyaml>=6.0 (from dbt-core>=1.8.0->dbt-duckdb==1.9.1->-r requirements.txt (line 4))
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:36.9019133Z   Downloading pyyaml-6.0.3-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.4 kB)
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:36.9283997Z Collecting snowplow-tracker<2.0,>=1.0.2 (from dbt-core>=1.8.0->dbt-duckdb==1.9.1->-r requirements.txt (line 4))
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:36.9472035Z   Downloading snowplow_tracker-1.1.0-py3-none-any.whl.metadata (5.7 kB)
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:36.9733438Z Collecting sqlparse<0.6.0,>=0.5.5 (from dbt-core>=1.8.0->dbt-duckdb==1.9.1->-r requirements.txt (line 4))
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:36.9928801Z   Downloading sqlparse-0.5.5-py3-none-any.whl.metadata (4.7 kB)
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:37.0310287Z Collecting importlib-metadata<9,>=6.0 (from dbt-semantic-interfaces<0.10,>=0.9.0->dbt-core>=1.8.0->dbt-duckdb==1.9.1->-r requirements.txt (line 4))
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:37.0503222Z   Downloading importlib_metadata-8.9.0-py3-none-any.whl.metadata (4.5 kB)
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:37.0810967Z Collecting more-itertools<11.0,>=8.0 (from dbt-semantic-interfaces<0.10,>=0.9.0->dbt-core>=1.8.0->dbt-duckdb==1.9.1->-r requirements.txt (line 4))
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:37.0997433Z   Downloading more_itertools-10.8.0-py3-none-any.whl.metadata (39 kB)
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:37.1417025Z Collecting zipp>=3.20 (from importlib-metadata<9,>=6.0->dbt-semantic-interfaces<0.10,>=0.9.0->dbt-core>=1.8.0->dbt-duckdb==1.9.1->-r requirements.txt (line 4))
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:37.1604391Z   Downloading zipp-3.23.1-py3-none-any.whl.metadata (3.6 kB)
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:37.1868725Z Collecting annotated-types>=0.6.0 (from pydantic<3->dbt-core>=1.8.0->dbt-duckdb==1.9.1->-r requirements.txt (line 4))
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:37.2056303Z   Downloading annotated_types-0.7.0-py3-none-any.whl.metadata (15 kB)
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:37.8407345Z Collecting pydantic-core==2.46.3 (from pydantic<3->dbt-core>=1.8.0->dbt-duckdb==1.9.1->-r requirements.txt (line 4))
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:37.8606235Z   Downloading pydantic_core-2.46.3-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (6.6 kB)
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:37.8862448Z Collecting typing-inspection>=0.4.2 (from pydantic<3->dbt-core>=1.8.0->dbt-duckdb==1.9.1->-r requirements.txt (line 4))
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:37.9056158Z   Downloading typing_inspection-0.4.2-py3-none-any.whl.metadata (2.6 kB)
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:37.9402129Z Collecting text-unidecode>=1.3 (from python-slugify>=1.2.1->agate<2.0,>=1.0->dbt-adapters<2,>=1->dbt-duckdb==1.9.1->-r requirements.txt (line 4))
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:37.9590784Z   Downloading text_unidecode-1.3-py2.py3-none-any.whl.metadata (2.4 kB)
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:37.9690953Z WARNING: The candidate selected for download or install is a yanked version: 'dbt-duckdb' candidate (version 1.9.1 at https://files.pythonhosted.org/packages/5e/ad/8788bf89b98be02ca0236a119f9a3f611dccc4b8a558b5bc9986026eef6e/dbt_duckdb-1.9.1-py3-none-any.whl (from https://pypi.org/simple/dbt-duckdb/) (requires-python:>=3.8))
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:37.9692901Z Reason for being yanked: Incorrectly marked as compatible with Python 3.8
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:37.9903651Z Downloading numpy-2.1.3-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (16.3 MB)
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:38.8212093Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 16.3/16.3 MB 20.5 MB/s  0:00:00
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:38.8405306Z Downloading pandas-2.2.3-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (13.1 MB)
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:39.0456675Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 13.1/13.1 MB 63.9 MB/s  0:00:00
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:39.0663983Z Downloading duckdb-1.1.3-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (20.1 MB)
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:39.2621344Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 20.1/20.1 MB 104.4 MB/s  0:00:00
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:39.2817998Z Downloading dbt_duckdb-1.9.1-py3-none-any.whl (64 kB)
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:39.3035129Z Downloading dbt_adapters-1.22.10-py3-none-any.whl (173 kB)
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:39.3249472Z Downloading dbt_common-1.37.3-py3-none-any.whl (87 kB)
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:39.3462176Z Downloading agate-1.9.1-py2.py3-none-any.whl (95 kB)
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:39.3668757Z Downloading colorama-0.4.6-py2.py3-none-any.whl (25 kB)
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:39.3872539Z Downloading dbt_protos-1.0.474-py3-none-any.whl (195 kB)
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:39.4091605Z Downloading deepdiff-8.6.2-py3-none-any.whl (91 kB)
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:39.4307640Z Downloading isodate-0.7.2-py3-none-any.whl (22 kB)
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:39.4516973Z Downloading jinja2-3.1.6-py3-none-any.whl (134 kB)
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:39.4736314Z Downloading jsonschema-4.26.0-py3-none-any.whl (90 kB)
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:39.4945881Z Downloading mashumaro-3.14-py3-none-any.whl (92 kB)
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:39.5166104Z Downloading orderly_set-5.5.0-py3-none-any.whl (13 kB)
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:39.5369973Z Downloading pathspec-0.12.1-py3-none-any.whl (31 kB)
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:39.5578927Z Downloading protobuf-6.33.6-cp39-abi3-manylinux2014_x86_64.whl (323 kB)
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:39.5801214Z Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:39.6017631Z Downloading requests-2.33.1-py3-none-any.whl (64 kB)
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:39.6227298Z Downloading charset_normalizer-3.4.7-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (214 kB)
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:39.6438827Z Downloading idna-3.13-py3-none-any.whl (68 kB)
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:39.6648661Z Downloading typing_extensions-4.15.0-py3-none-any.whl (44 kB)
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:39.6868735Z Downloading urllib3-2.6.3-py3-none-any.whl (131 kB)
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:39.7076629Z Downloading attrs-26.1.0-py3-none-any.whl (67 kB)
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:39.7282606Z Downloading babel-2.18.0-py3-none-any.whl (10.2 MB)
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:39.8005213Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 10.2/10.2 MB 141.8 MB/s  0:00:00
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:39.8196234Z Downloading certifi-2026.4.22-py3-none-any.whl (135 kB)
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:39.8427180Z Downloading dbt_core-1.11.8-py3-none-any.whl (1.1 MB)
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:39.8507382Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.1/1.1 MB 133.3 MB/s  0:00:00
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:39.8698126Z Downloading click-8.3.3-py3-none-any.whl (110 kB)
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:39.8933520Z Downloading dbt_extractor-0.6.0-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (442 kB)
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:39.9157107Z Downloading dbt_semantic_interfaces-0.9.0-py3-none-any.whl (147 kB)
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:39.9366671Z Downloading importlib_metadata-8.9.0-py3-none-any.whl (27 kB)
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:39.9571567Z Downloading more_itertools-10.8.0-py3-none-any.whl (69 kB)
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:39.9816233Z Downloading networkx-3.6.1-py3-none-any.whl (2.1 MB)
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:39.9953294Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 154.7 MB/s  0:00:00
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:40.0153949Z Downloading pydantic-2.13.3-py3-none-any.whl (471 kB)
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:40.0368645Z Downloading pydantic_core-2.46.3-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (2.1 MB)
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:40.0501313Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 163.0 MB/s  0:00:00
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:40.0694953Z Downloading pyyaml-6.0.3-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (806 kB)
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:40.0761565Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 806.6/806.6 kB 114.9 MB/s  0:00:00
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:40.0955126Z Downloading snowplow_tracker-1.1.0-py3-none-any.whl (44 kB)
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:40.1162790Z Downloading sqlparse-0.5.5-py3-none-any.whl (46 kB)
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:40.1369966Z Downloading annotated_types-0.7.0-py3-none-any.whl (13 kB)
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:40.1577131Z Downloading daff-1.4.2-py3-none-any.whl (144 kB)
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:40.1789288Z Downloading jsonschema_specifications-2025.9.1-py3-none-any.whl (18 kB)
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:40.2004737Z Downloading leather-0.4.1-py3-none-any.whl (30 kB)
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:40.2214023Z Downloading markupsafe-3.0.3-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (22 kB)
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:40.2421854Z Downloading msgpack-1.1.2-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (426 kB)
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:40.2643957Z Downloading packaging-26.1-py3-none-any.whl (95 kB)
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:40.2863042Z Downloading parsedatetime-2.6-py3-none-any.whl (42 kB)
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:40.3075081Z Downloading python_slugify-8.0.4-py2.py3-none-any.whl (10 kB)
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:40.3280239Z Downloading pytimeparse-1.1.8-py2.py3-none-any.whl (10.0 kB)
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:40.3485046Z Downloading pytz-2026.1.post1-py2.py3-none-any.whl (510 kB)
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:40.3708323Z Downloading referencing-0.37.0-py3-none-any.whl (26 kB)
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:40.3925165Z Downloading rpds_py-0.30.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (390 kB)
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:40.4139291Z Downloading six-1.17.0-py2.py3-none-any.whl (11 kB)
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:40.4351654Z Downloading text_unidecode-1.3-py2.py3-none-any.whl (78 kB)
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:40.4557344Z Downloading typing_inspection-0.4.2-py3-none-any.whl (14 kB)
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:40.4764758Z Downloading tzdata-2026.1-py2.py3-none-any.whl (348 kB)
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:40.4980774Z Downloading zipp-3.23.1-py3-none-any.whl (10 kB)
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:40.7120985Z Installing collected packages: text-unidecode, pytz, pytimeparse, parsedatetime, leather, daff, zipp, urllib3, tzdata, typing-extensions, sqlparse, six, rpds-py, pyyaml, python-slugify, protobuf, pathspec, packaging, orderly-set, numpy, networkx, msgpack, more-itertools, MarkupSafe, isodate, idna, duckdb, dbt-extractor, colorama, click, charset_normalizer, certifi, Babel, attrs, annotated-types, typing-inspection, requests, referencing, python-dateutil, pydantic-core, mashumaro, jinja2, importlib-metadata, deepdiff, dbt-protos, agate, snowplow-tracker, pydantic, pandas, jsonschema-specifications, jsonschema, dbt-semantic-interfaces, dbt-common, dbt-adapters, dbt-core, dbt-duckdb
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:49.2356584Z 
+build-and-deploy	Install Python dependencies	2026-04-22T18:13:49.2381926Z Successfully installed Babel-2.18.0 MarkupSafe-3.0.3 agate-1.9.1 annotated-types-0.7.0 attrs-26.1.0 certifi-2026.4.22 charset_normalizer-3.4.7 click-8.3.3 colorama-0.4.6 daff-1.4.2 dbt-adapters-1.22.10 dbt-common-1.37.3 dbt-core-1.11.8 dbt-duckdb-1.9.1 dbt-extractor-0.6.0 dbt-protos-1.0.474 dbt-semantic-interfaces-0.9.0 deepdiff-8.6.2 duckdb-1.1.3 idna-3.13 importlib-metadata-8.9.0 isodate-0.7.2 jinja2-3.1.6 jsonschema-4.26.0 jsonschema-specifications-2025.9.1 leather-0.4.1 mashumaro-3.14 more-itertools-10.8.0 msgpack-1.1.2 networkx-3.6.1 numpy-2.1.3 orderly-set-5.5.0 packaging-26.1 pandas-2.2.3 parsedatetime-2.6 pathspec-0.12.1 protobuf-6.33.6 pydantic-2.13.3 pydantic-core-2.46.3 python-dateutil-2.9.0.post0 python-slugify-8.0.4 pytimeparse-1.1.8 pytz-2026.1.post1 pyyaml-6.0.3 referencing-0.37.0 requests-2.33.1 rpds-py-0.30.0 six-1.17.0 snowplow-tracker-1.1.0 sqlparse-0.5.5 text-unidecode-1.3 typing-extensions-4.15.0 typing-inspection-0.4.2 tzdata-2026.1 urllib3-2.6.3 zipp-3.23.1
+build-and-deploy	Generate synthetic CSVs (+ ingest to DuckDB file)	﻿2026-04-22T18:13:49.5873368Z ##[group]Run python data_gen/generator.py
+build-and-deploy	Generate synthetic CSVs (+ ingest to DuckDB file)	2026-04-22T18:13:49.5873734Z [36;1mpython data_gen/generator.py[0m
+build-and-deploy	Generate synthetic CSVs (+ ingest to DuckDB file)	2026-04-22T18:13:49.5887069Z shell: /usr/bin/bash -e {0}
+build-and-deploy	Generate synthetic CSVs (+ ingest to DuckDB file)	2026-04-22T18:13:49.5887350Z env:
+build-and-deploy	Generate synthetic CSVs (+ ingest to DuckDB file)	2026-04-22T18:13:49.5887847Z   DUCKDB_PATH: /home/runner/work/unified-unit-economics/unified-unit-economics/warehouse.duckdb
+build-and-deploy	Generate synthetic CSVs (+ ingest to DuckDB file)	2026-04-22T18:13:49.5888376Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.15/x64
+build-and-deploy	Generate synthetic CSVs (+ ingest to DuckDB file)	2026-04-22T18:13:49.5888828Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.15/x64/lib/pkgconfig
+build-and-deploy	Generate synthetic CSVs (+ ingest to DuckDB file)	2026-04-22T18:13:49.5889257Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.15/x64
+build-and-deploy	Generate synthetic CSVs (+ ingest to DuckDB file)	2026-04-22T18:13:49.5889708Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.15/x64
+build-and-deploy	Generate synthetic CSVs (+ ingest to DuckDB file)	2026-04-22T18:13:49.5890121Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.15/x64
+build-and-deploy	Generate synthetic CSVs (+ ingest to DuckDB file)	2026-04-22T18:13:49.5890507Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.15/x64/lib
+build-and-deploy	Generate synthetic CSVs (+ ingest to DuckDB file)	2026-04-22T18:13:49.5890873Z ##[endgroup]
+build-and-deploy	Generate synthetic CSVs (+ ingest to DuckDB file)	2026-04-22T18:13:50.1580238Z Wrote /home/runner/work/unified-unit-economics/unified-unit-economics/data_gen/output/sales.csv
+build-and-deploy	Generate synthetic CSVs (+ ingest to DuckDB file)	2026-04-22T18:13:50.1582417Z Wrote /home/runner/work/unified-unit-economics/unified-unit-economics/data_gen/output/marketing.csv
+build-and-deploy	Generate synthetic CSVs (+ ingest to DuckDB file)	2026-04-22T18:13:50.1584481Z Wrote /home/runner/work/unified-unit-economics/unified-unit-economics/data_gen/output/logistics.csv
+build-and-deploy	Generate synthetic CSVs (+ ingest to DuckDB file)	2026-04-22T18:13:50.1586903Z Ingested CSVs into DuckDB at /home/runner/work/unified-unit-economics/unified-unit-economics/warehouse.duckdb (schema raw.*)
+build-and-deploy	Run dbt build (run + test)	﻿2026-04-22T18:13:50.2063423Z ##[group]Run dbt --version
+build-and-deploy	Run dbt build (run + test)	2026-04-22T18:13:50.2063783Z [36;1mdbt --version[0m
+build-and-deploy	Run dbt build (run + test)	2026-04-22T18:13:50.2064142Z [36;1mdbt build --project-dir dbt_project --threads 1[0m
+build-and-deploy	Run dbt build (run + test)	2026-04-22T18:13:50.2077416Z shell: /usr/bin/bash -e {0}
+build-and-deploy	Run dbt build (run + test)	2026-04-22T18:13:50.2077691Z env:
+build-and-deploy	Run dbt build (run + test)	2026-04-22T18:13:50.2078123Z   DUCKDB_PATH: /home/runner/work/unified-unit-economics/unified-unit-economics/warehouse.duckdb
+build-and-deploy	Run dbt build (run + test)	2026-04-22T18:13:50.2078741Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.15/x64
+build-and-deploy	Run dbt build (run + test)	2026-04-22T18:13:50.2079177Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.15/x64/lib/pkgconfig
+build-and-deploy	Run dbt build (run + test)	2026-04-22T18:13:50.2079618Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.15/x64
+build-and-deploy	Run dbt build (run + test)	2026-04-22T18:13:50.2080031Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.15/x64
+build-and-deploy	Run dbt build (run + test)	2026-04-22T18:13:50.2080443Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.15/x64
+build-and-deploy	Run dbt build (run + test)	2026-04-22T18:13:50.2080831Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.15/x64/lib
+build-and-deploy	Run dbt build (run + test)	2026-04-22T18:13:50.2081404Z   DBT_PROFILES_DIR: /home/runner/work/unified-unit-economics/unified-unit-economics/dbt_project
+build-and-deploy	Run dbt build (run + test)	2026-04-22T18:13:50.2081948Z ##[endgroup]
+build-and-deploy	Run dbt build (run + test)	2026-04-22T18:13:52.5480009Z Core:
+build-and-deploy	Run dbt build (run + test)	2026-04-22T18:13:52.5480334Z   - installed: 1.11.8
+build-and-deploy	Run dbt build (run + test)	2026-04-22T18:13:52.5480664Z   - latest:    1.11.8 - Up to date!
+build-and-deploy	Run dbt build (run + test)	2026-04-22T18:13:52.5480839Z 
+build-and-deploy	Run dbt build (run + test)	2026-04-22T18:13:52.5480975Z Plugins:
+build-and-deploy	Run dbt build (run + test)	2026-04-22T18:13:52.5481254Z   - duckdb: 1.9.1 - Update available!
+build-and-deploy	Run dbt build (run + test)	2026-04-22T18:13:52.5481458Z 
+build-and-deploy	Run dbt build (run + test)	2026-04-22T18:13:52.5481659Z   At least one plugin is out of date with dbt-core.
+build-and-deploy	Run dbt build (run + test)	2026-04-22T18:13:52.5482037Z   You can find instructions for upgrading here:
+build-and-deploy	Run dbt build (run + test)	2026-04-22T18:13:52.5482418Z   https://docs.getdbt.com/docs/installation
+build-and-deploy	Run dbt build (run + test)	2026-04-22T18:13:52.5482619Z 
+build-and-deploy	Run dbt build (run + test)	2026-04-22T18:13:52.5482623Z 
+build-and-deploy	Run dbt build (run + test)	2026-04-22T18:13:53.9572345Z [0m18:13:53  Running with dbt=1.11.8
+build-and-deploy	Run dbt build (run + test)	2026-04-22T18:13:54.2269427Z [0m18:13:54  Registered adapter: duckdb=1.9.1
+build-and-deploy	Run dbt build (run + test)	2026-04-22T18:13:54.3033889Z [0m18:13:54  Unable to do partial parsing because saved manifest not found. Starting full parse.
+build-and-deploy	Run dbt build (run + test)	2026-04-22T18:13:55.5520006Z [0m18:13:55  Found 6 models, 6 data tests, 3 sources, 457 macros
+build-and-deploy	Run dbt build (run + test)	2026-04-22T18:13:55.5543497Z [0m18:13:55  
+build-and-deploy	Run dbt build (run + test)	2026-04-22T18:13:55.5548390Z [0m18:13:55  Concurrency: 1 threads (target='dev')
+build-and-deploy	Run dbt build (run + test)	2026-04-22T18:13:55.5552782Z [0m18:13:55  
+build-and-deploy	Run dbt build (run + test)	2026-04-22T18:13:55.8617810Z [0m18:13:55  1 of 12 START sql view model analytics_staging.stg_logistics ................... [RUN]
+build-and-deploy	Run dbt build (run + test)	2026-04-22T18:13:55.9382557Z [0m18:13:55  1 of 12 OK created sql view model analytics_staging.stg_logistics .............. [[32mOK[0m in 0.07s]
+build-and-deploy	Run dbt build (run + test)	2026-04-22T18:13:55.9399406Z [0m18:13:55  2 of 12 START sql view model analytics_staging.stg_marketing ................... [RUN]
+build-and-deploy	Run dbt build (run + test)	2026-04-22T18:13:55.9731412Z [0m18:13:55  2 of 12 OK created sql view model analytics_staging.stg_marketing .............. [[32mOK[0m in 0.03s]
+build-and-deploy	Run dbt build (run + test)	2026-04-22T18:13:55.9749639Z [0m18:13:55  3 of 12 START sql view model analytics_staging.stg_sales ....................... [RUN]
+build-and-deploy	Run dbt build (run + test)	2026-04-22T18:13:56.0081557Z [0m18:13:56  3 of 12 OK created sql view model analytics_staging.stg_sales .................. [[32mOK[0m in 0.03s]
+build-and-deploy	Run dbt build (run + test)	2026-04-22T18:13:56.0098453Z [0m18:13:56  4 of 12 START sql view model analytics_intermediate.int_marketing_daily_cac .... [RUN]
+build-and-deploy	Run dbt build (run + test)	2026-04-22T18:13:56.0421462Z [0m18:13:56  4 of 12 OK created sql view model analytics_intermediate.int_marketing_daily_cac  [[32mOK[0m in 0.03s]
+build-and-deploy	Run dbt build (run + test)	2026-04-22T18:13:56.0437948Z [0m18:13:56  5 of 12 START sql view model analytics_intermediate.int_orders_enriched ........ [RUN]
+build-and-deploy	Run dbt build (run + test)	2026-04-22T18:13:56.0774101Z [0m18:13:56  5 of 12 OK created sql view model analytics_intermediate.int_orders_enriched ... [[32mOK[0m in 0.03s]
+build-and-deploy	Run dbt build (run + test)	2026-04-22T18:13:56.0794781Z [0m18:13:56  6 of 12 START sql table model analytics_marts.fct_unit_economics ............... [RUN]
+build-and-deploy	Run dbt build (run + test)	2026-04-22T18:13:56.1587558Z [0m18:13:56  6 of 12 OK created sql table model analytics_marts.fct_unit_economics .......... [[32mOK[0m in 0.08s]
+build-and-deploy	Run dbt build (run + test)	2026-04-22T18:13:56.1610088Z [0m18:13:56  7 of 12 START test not_null_fct_unit_economics_net_profit_pkr .................. [RUN]
+build-and-deploy	Run dbt build (run + test)	2026-04-22T18:13:56.2038094Z [0m18:13:56  7 of 12 PASS not_null_fct_unit_economics_net_profit_pkr ........................ [[32mPASS[0m in 0.04s]
+build-and-deploy	Run dbt build (run + test)	2026-04-22T18:13:56.2053283Z [0m18:13:56  8 of 12 START test not_null_fct_unit_economics_order_date ...................... [RUN]
+build-and-deploy	Run dbt build (run + test)	2026-04-22T18:13:56.2282749Z [0m18:13:56  8 of 12 PASS not_null_fct_unit_economics_order_date ............................ [[32mPASS[0m in 0.02s]
+build-and-deploy	Run dbt build (run + test)	2026-04-22T18:13:56.2298417Z [0m18:13:56  9 of 12 START test not_null_fct_unit_economics_order_id ........................ [RUN]
+build-and-deploy	Run dbt build (run + test)	2026-04-22T18:13:56.2503068Z [0m18:13:56  9 of 12 PASS not_null_fct_unit_economics_order_id .............................. [[32mPASS[0m in 0.02s]
+build-and-deploy	Run dbt build (run + test)	2026-04-22T18:13:56.2518453Z [0m18:13:56  10 of 12 START test not_null_fct_unit_economics_revenue_pkr .................... [RUN]
+build-and-deploy	Run dbt build (run + test)	2026-04-22T18:13:56.2719124Z [0m18:13:56  10 of 12 PASS not_null_fct_unit_economics_revenue_pkr .......................... [[32mPASS[0m in 0.02s]
+build-and-deploy	Run dbt build (run + test)	2026-04-22T18:13:56.2733998Z [0m18:13:56  11 of 12 START test not_null_fct_unit_economics_vertical ....................... [RUN]
+build-and-deploy	Run dbt build (run + test)	2026-04-22T18:13:56.2930592Z [0m18:13:56  11 of 12 PASS not_null_fct_unit_economics_vertical ............................. [[32mPASS[0m in 0.02s]
+build-and-deploy	Run dbt build (run + test)	2026-04-22T18:13:56.2946698Z [0m18:13:56  12 of 12 START test unique_fct_unit_economics_order_id ......................... [RUN]
+build-and-deploy	Run dbt build (run + test)	2026-04-22T18:13:56.3180170Z [0m18:13:56  12 of 12 PASS unique_fct_unit_economics_order_id ............................... [[32mPASS[0m in 0.02s]
+build-and-deploy	Run dbt build (run + test)	2026-04-22T18:13:56.3321125Z [0m18:13:56  
+build-and-deploy	Run dbt build (run + test)	2026-04-22T18:13:56.3326151Z [0m18:13:56  Finished running 1 table model, 6 data tests, 5 view models in 0 hours 0 minutes and 0.78 seconds (0.78s).
+build-and-deploy	Run dbt build (run + test)	2026-04-22T18:13:56.3658663Z [0m18:13:56  
+build-and-deploy	Run dbt build (run + test)	2026-04-22T18:13:56.3663586Z [0m18:13:56  [32mCompleted successfully[0m
+build-and-deploy	Run dbt build (run + test)	2026-04-22T18:13:56.3668143Z [0m18:13:56  
+build-and-deploy	Run dbt build (run + test)	2026-04-22T18:13:56.3673141Z [0m18:13:56  Done. PASS=12 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=12
+build-and-deploy	Set up Node	﻿2026-04-22T18:13:56.8838394Z ##[group]Run actions/setup-node@v4
+build-and-deploy	Set up Node	2026-04-22T18:13:56.8838652Z with:
+build-and-deploy	Set up Node	2026-04-22T18:13:56.8838830Z   node-version: 20
+build-and-deploy	Set up Node	2026-04-22T18:13:56.8839004Z   cache: npm
+build-and-deploy	Set up Node	2026-04-22T18:13:56.8839222Z   cache-dependency-path: dashboard/package.json
+build-and-deploy	Set up Node	2026-04-22T18:13:56.8839486Z   always-auth: false
+build-and-deploy	Set up Node	2026-04-22T18:13:56.8839686Z   check-latest: false
+build-and-deploy	Set up Node	2026-04-22T18:13:56.8839998Z   token: ***
+build-and-deploy	Set up Node	2026-04-22T18:13:56.8840171Z env:
+build-and-deploy	Set up Node	2026-04-22T18:13:56.8840521Z   DUCKDB_PATH: /home/runner/work/unified-unit-economics/unified-unit-economics/warehouse.duckdb
+build-and-deploy	Set up Node	2026-04-22T18:13:56.8841121Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.15/x64
+build-and-deploy	Set up Node	2026-04-22T18:13:56.8841506Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.15/x64/lib/pkgconfig
+build-and-deploy	Set up Node	2026-04-22T18:13:56.8841881Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.15/x64
+build-and-deploy	Set up Node	2026-04-22T18:13:56.8842235Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.15/x64
+build-and-deploy	Set up Node	2026-04-22T18:13:56.8842568Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.15/x64
+build-and-deploy	Set up Node	2026-04-22T18:13:56.8842916Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.15/x64/lib
+build-and-deploy	Set up Node	2026-04-22T18:13:56.8843232Z ##[endgroup]
+build-and-deploy	Set up Node	2026-04-22T18:13:57.0444925Z Found in cache @ /opt/hostedtoolcache/node/20.20.2/x64
+build-and-deploy	Set up Node	2026-04-22T18:13:57.0451279Z ##[group]Environment details
+build-and-deploy	Set up Node	2026-04-22T18:13:57.3669594Z node: v20.20.2
+build-and-deploy	Set up Node	2026-04-22T18:13:57.3669981Z npm: 10.8.2
+build-and-deploy	Set up Node	2026-04-22T18:13:57.3670147Z yarn: 1.22.22
+build-and-deploy	Set up Node	2026-04-22T18:13:57.3670638Z ##[endgroup]
+build-and-deploy	Set up Node	2026-04-22T18:13:57.3692664Z [command]/opt/hostedtoolcache/node/20.20.2/x64/bin/npm config get cache
+build-and-deploy	Set up Node	2026-04-22T18:13:57.4748147Z /home/runner/.npm
+build-and-deploy	Set up Node	2026-04-22T18:13:57.7143263Z Cache hit for: node-cache-Linux-x64-npm-e758361026948bcbdc16fa636ba3368fcab45a0d25fa53762aea2962a9669e9e
+build-and-deploy	Set up Node	2026-04-22T18:13:58.9452917Z Received 29360128 of 175276868 (16.8%), 28.0 MBs/sec
+build-and-deploy	Set up Node	2026-04-22T18:13:59.9487131Z Received 163577856 of 175276868 (93.3%), 77.9 MBs/sec
+build-and-deploy	Set up Node	2026-04-22T18:14:00.0606343Z Received 175276868 of 175276868 (100.0%), 79.0 MBs/sec
+build-and-deploy	Set up Node	2026-04-22T18:14:00.0666875Z Cache Size: ~167 MB (175276868 B)
+build-and-deploy	Set up Node	2026-04-22T18:14:00.0715549Z [command]/usr/bin/tar -xf /home/runner/work/_temp/1f1fb773-a117-498d-8819-7b0cd3be80b5/cache.tzst -P -C /home/runner/work/unified-unit-economics/unified-unit-economics --use-compress-program unzstd
+build-and-deploy	Set up Node	2026-04-22T18:14:00.4995153Z Cache restored successfully
+build-and-deploy	Set up Node	2026-04-22T18:14:00.5061154Z Cache restored from key: node-cache-Linux-x64-npm-e758361026948bcbdc16fa636ba3368fcab45a0d25fa53762aea2962a9669e9e
+build-and-deploy	Install dashboard dependencies	﻿2026-04-22T18:14:00.5153090Z ##[group]Run npm install --no-audit --no-fund --legacy-peer-deps
+build-and-deploy	Install dashboard dependencies	2026-04-22T18:14:00.5153536Z [36;1mnpm install --no-audit --no-fund --legacy-peer-deps[0m
+build-and-deploy	Install dashboard dependencies	2026-04-22T18:14:00.5171763Z shell: /usr/bin/bash -e {0}
+build-and-deploy	Install dashboard dependencies	2026-04-22T18:14:00.5172005Z env:
+build-and-deploy	Install dashboard dependencies	2026-04-22T18:14:00.5172373Z   DUCKDB_PATH: /home/runner/work/unified-unit-economics/unified-unit-economics/warehouse.duckdb
+build-and-deploy	Install dashboard dependencies	2026-04-22T18:14:00.5172870Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.15/x64
+build-and-deploy	Install dashboard dependencies	2026-04-22T18:14:00.5173249Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.15/x64/lib/pkgconfig
+build-and-deploy	Install dashboard dependencies	2026-04-22T18:14:00.5173636Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.15/x64
+build-and-deploy	Install dashboard dependencies	2026-04-22T18:14:00.5173979Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.15/x64
+build-and-deploy	Install dashboard dependencies	2026-04-22T18:14:00.5174321Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.15/x64
+build-and-deploy	Install dashboard dependencies	2026-04-22T18:14:00.5174662Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.15/x64/lib
+build-and-deploy	Install dashboard dependencies	2026-04-22T18:14:00.5174953Z ##[endgroup]
+build-and-deploy	Install dashboard dependencies	2026-04-22T18:14:25.0429333Z npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+build-and-deploy	Install dashboard dependencies	2026-04-22T18:14:25.1381089Z npm warn deprecated rimraf@2.7.1: Rimraf versions prior to v4 are no longer supported
+build-and-deploy	Install dashboard dependencies	2026-04-22T18:14:25.1461623Z npm warn deprecated trim@0.0.1: Use String.prototype.trim() instead
+build-and-deploy	Install dashboard dependencies	2026-04-22T18:14:25.1557795Z npm warn deprecated whatwg-encoding@3.1.1: Use @exodus/bytes instead for a more spec-conformant and faster implementation
+build-and-deploy	Install dashboard dependencies	2026-04-22T18:14:25.1639930Z npm warn deprecated @humanwhocodes/config-array@0.13.0: Use @eslint/config-array instead
+build-and-deploy	Install dashboard dependencies	2026-04-22T18:14:25.1921032Z npm warn deprecated rimraf@3.0.2: Rimraf versions prior to v4 are no longer supported
+build-and-deploy	Install dashboard dependencies	2026-04-22T18:14:25.2533538Z npm warn deprecated glob@7.2.3: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+build-and-deploy	Install dashboard dependencies	2026-04-22T18:14:25.2591239Z npm warn deprecated @humanwhocodes/object-schema@2.0.3: Use @eslint/object-schema instead
+build-and-deploy	Install dashboard dependencies	2026-04-22T18:14:25.3184417Z npm warn deprecated sourcemap-codec@1.4.8: Please use @jridgewell/sourcemap-codec instead
+build-and-deploy	Install dashboard dependencies	2026-04-22T18:14:25.9557919Z npm warn deprecated glob@10.5.0: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+build-and-deploy	Install dashboard dependencies	2026-04-22T18:14:27.1404432Z npm warn deprecated eslint@8.57.1: This version is no longer supported. Please see https://eslint.org/version-support for other options.
+build-and-deploy	Install dashboard dependencies	2026-04-22T18:14:28.8150216Z 
+build-and-deploy	Install dashboard dependencies	2026-04-22T18:14:28.8150775Z added 798 packages in 28s
+build-and-deploy	Build Evidence static site	﻿2026-04-22T18:14:28.8539793Z ##[group]Run echo "== Evidence config debug =="
+build-and-deploy	Build Evidence static site	2026-04-22T18:14:28.8540144Z [36;1mecho "== Evidence config debug =="[0m
+build-and-deploy	Build Evidence static site	2026-04-22T18:14:28.8540394Z [36;1mpwd[0m
+build-and-deploy	Build Evidence static site	2026-04-22T18:14:28.8540577Z [36;1mls -la[0m
+build-and-deploy	Build Evidence static site	2026-04-22T18:14:28.8540824Z [36;1mecho "-- evidence.config.yaml --"[0m
+build-and-deploy	Build Evidence static site	2026-04-22T18:14:28.8541273Z [36;1m(test -f evidence.config.yaml && cat evidence.config.yaml) || echo "missing evidence.config.yaml"[0m
+build-and-deploy	Build Evidence static site	2026-04-22T18:14:28.8541720Z [36;1mecho "-- sources --"[0m
+build-and-deploy	Build Evidence static site	2026-04-22T18:14:28.8541950Z [36;1mls -la sources || true[0m
+build-and-deploy	Build Evidence static site	2026-04-22T18:14:28.8542173Z [36;1mecho "-- pages --"[0m
+build-and-deploy	Build Evidence static site	2026-04-22T18:14:28.8542388Z [36;1mls -la pages || true[0m
+build-and-deploy	Build Evidence static site	2026-04-22T18:14:28.8542616Z [36;1mecho "-- getEvidenceConfig() --"[0m
+build-and-deploy	Build Evidence static site	2026-04-22T18:14:28.8543152Z [36;1mnode -e "import { getEvidenceConfig } from '@evidence-dev/sdk/config'; console.log(JSON.stringify(getEvidenceConfig(), null, 2));"[0m
+build-and-deploy	Build Evidence static site	2026-04-22T18:14:28.8543769Z [36;1mnpm run build[0m
+build-and-deploy	Build Evidence static site	2026-04-22T18:14:28.8557437Z shell: /usr/bin/bash -e {0}
+build-and-deploy	Build Evidence static site	2026-04-22T18:14:28.8557808Z env:
+build-and-deploy	Build Evidence static site	2026-04-22T18:14:28.8558395Z   DUCKDB_PATH: /home/runner/work/unified-unit-economics/unified-unit-economics/warehouse.duckdb
+build-and-deploy	Build Evidence static site	2026-04-22T18:14:28.8559227Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.15/x64
+build-and-deploy	Build Evidence static site	2026-04-22T18:14:28.8559836Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.15/x64/lib/pkgconfig
+build-and-deploy	Build Evidence static site	2026-04-22T18:14:28.8560476Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.15/x64
+build-and-deploy	Build Evidence static site	2026-04-22T18:14:28.8561096Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.15/x64
+build-and-deploy	Build Evidence static site	2026-04-22T18:14:28.8561715Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.15/x64
+build-and-deploy	Build Evidence static site	2026-04-22T18:14:28.8562321Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.15/x64/lib
+build-and-deploy	Build Evidence static site	2026-04-22T18:14:28.8562740Z ##[endgroup]
+build-and-deploy	Build Evidence static site	2026-04-22T18:14:28.8597797Z == Evidence config debug ==
+build-and-deploy	Build Evidence static site	2026-04-22T18:14:28.8598465Z /home/runner/work/unified-unit-economics/unified-unit-economics/dashboard
+build-and-deploy	Build Evidence static site	2026-04-22T18:14:28.8609485Z total 448
+build-and-deploy	Build Evidence static site	2026-04-22T18:14:28.8609990Z drwxr-xr-x   6 runner runner   4096 Apr 22 18:14 .
+build-and-deploy	Build Evidence static site	2026-04-22T18:14:28.8610477Z drwxr-xr-x   7 runner runner   4096 Apr 22 18:13 ..
+build-and-deploy	Build Evidence static site	2026-04-22T18:14:28.8610881Z -rw-r--r--   1 runner runner   2535 Apr 22 18:13 app.css
+build-and-deploy	Build Evidence static site	2026-04-22T18:14:28.8611576Z drwxr-xr-x   2 runner runner   4096 Apr 22 18:13 components
+build-and-deploy	Build Evidence static site	2026-04-22T18:14:28.8612373Z -rw-r--r--   1 runner runner    110 Apr 22 18:13 evidence.config.yaml
+build-and-deploy	Build Evidence static site	2026-04-22T18:14:28.8613119Z -rw-r--r--   1 runner runner   2474 Apr 22 18:13 index.md
+build-and-deploy	Build Evidence static site	2026-04-22T18:14:28.8613612Z drwxr-xr-x 571 runner runner  20480 Apr 22 18:14 node_modules
+build-and-deploy	Build Evidence static site	2026-04-22T18:14:28.8614003Z -rw-r--r--   1 runner runner   1279 Apr 22 18:13 orders.md
+build-and-deploy	Build Evidence static site	2026-04-22T18:14:28.8614415Z -rw-r--r--   1 runner runner 386248 Apr 22 18:14 package-lock.json
+build-and-deploy	Build Evidence static site	2026-04-22T18:14:28.8614828Z -rw-r--r--   1 runner runner    808 Apr 22 18:13 package.json
+build-and-deploy	Build Evidence static site	2026-04-22T18:14:28.8615205Z drwxr-xr-x   2 runner runner   4096 Apr 22 18:13 pages
+build-and-deploy	Build Evidence static site	2026-04-22T18:14:28.8615637Z -rw-r--r--   1 runner runner     82 Apr 22 18:13 postcss.config.cjs
+build-and-deploy	Build Evidence static site	2026-04-22T18:14:28.8616170Z drwxr-xr-x   3 runner runner   4096 Apr 22 18:13 sources
+build-and-deploy	Build Evidence static site	2026-04-22T18:14:28.8616592Z -rw-r--r--   1 runner runner    260 Apr 22 18:13 tailwind.config.cjs
+build-and-deploy	Build Evidence static site	2026-04-22T18:14:28.8616938Z -- evidence.config.yaml --
+build-and-deploy	Build Evidence static site	2026-04-22T18:14:28.8620199Z plugins:
+build-and-deploy	Build Evidence static site	2026-04-22T18:14:28.8620493Z   components:
+build-and-deploy	Build Evidence static site	2026-04-22T18:14:28.8620897Z     "@evidence-dev/core-components": {}
+build-and-deploy	Build Evidence static site	2026-04-22T18:14:28.8621150Z   datasources:
+build-and-deploy	Build Evidence static site	2026-04-22T18:14:28.8621429Z     "@evidence-dev/duckdb": {}
+build-and-deploy	Build Evidence static site	2026-04-22T18:14:28.8621685Z 
+build-and-deploy	Build Evidence static site	2026-04-22T18:14:28.8621887Z -- sources --
+build-and-deploy	Build Evidence static site	2026-04-22T18:14:28.8630598Z total 12
+build-and-deploy	Build Evidence static site	2026-04-22T18:14:28.8631044Z drwxr-xr-x 3 runner runner 4096 Apr 22 18:13 .
+build-and-deploy	Build Evidence static site	2026-04-22T18:14:28.8631496Z drwxr-xr-x 6 runner runner 4096 Apr 22 18:14 ..
+build-and-deploy	Build Evidence static site	2026-04-22T18:14:28.8631952Z drwxr-xr-x 2 runner runner 4096 Apr 22 18:13 motherduck
+build-and-deploy	Build Evidence static site	2026-04-22T18:14:28.8632443Z -- pages --
+build-and-deploy	Build Evidence static site	2026-04-22T18:14:28.8641674Z total 16
+build-and-deploy	Build Evidence static site	2026-04-22T18:14:28.8642109Z drwxr-xr-x 2 runner runner 4096 Apr 22 18:13 .
+build-and-deploy	Build Evidence static site	2026-04-22T18:14:28.8642537Z drwxr-xr-x 6 runner runner 4096 Apr 22 18:14 ..
+build-and-deploy	Build Evidence static site	2026-04-22T18:14:28.8643189Z -rw-r--r-- 1 runner runner 3708 Apr 22 18:13 index.md
+build-and-deploy	Build Evidence static site	2026-04-22T18:14:28.8643844Z -rw-r--r-- 1 runner runner 2632 Apr 22 18:13 orders.md
+build-and-deploy	Build Evidence static site	2026-04-22T18:14:28.8644379Z -- getEvidenceConfig() --
+build-and-deploy	Build Evidence static site	2026-04-22T18:14:28.9486831Z {
+build-and-deploy	Build Evidence static site	2026-04-22T18:14:28.9487198Z   "plugins": {
+build-and-deploy	Build Evidence static site	2026-04-22T18:14:28.9487541Z     "components": {
+build-and-deploy	Build Evidence static site	2026-04-22T18:14:28.9487960Z       "@evidence-dev/core-components": {
+build-and-deploy	Build Evidence static site	2026-04-22T18:14:28.9488425Z         "overrides": [],
+build-and-deploy	Build Evidence static site	2026-04-22T18:14:28.9488727Z         "aliases": {},
+build-and-deploy	Build Evidence static site	2026-04-22T18:14:28.9489052Z         "provides": []
+build-and-deploy	Build Evidence static site	2026-04-22T18:14:28.9489265Z       }
+build-and-deploy	Build Evidence static site	2026-04-22T18:14:28.9489424Z     },
+build-and-deploy	Build Evidence static site	2026-04-22T18:14:28.9489614Z     "datasources": {
+build-and-deploy	Build Evidence static site	2026-04-22T18:14:28.9489856Z       "@evidence-dev/duckdb": {}
+build-and-deploy	Build Evidence static site	2026-04-22T18:14:28.9490089Z     }
+build-and-deploy	Build Evidence static site	2026-04-22T18:14:28.9490246Z   },
+build-and-deploy	Build Evidence static site	2026-04-22T18:14:28.9490424Z   "deployment": {
+build-and-deploy	Build Evidence static site	2026-04-22T18:14:28.9490626Z     "basePath": ""
+build-and-deploy	Build Evidence static site	2026-04-22T18:14:28.9490808Z   }
+build-and-deploy	Build Evidence static site	2026-04-22T18:14:28.9490957Z }
+build-and-deploy	Build Evidence static site	2026-04-22T18:14:29.0494900Z 
+build-and-deploy	Build Evidence static site	2026-04-22T18:14:29.0495402Z > build
+build-and-deploy	Build Evidence static site	2026-04-22T18:14:29.0495880Z > evidence build
+build-and-deploy	Build Evidence static site	2026-04-22T18:14:29.0496027Z 
+build-and-deploy	Build Evidence static site	2026-04-22T18:14:45.3491111Z No sources found, execute "npm run sources" to generate
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:13.1347201Z No sources found, execute "npm run sources" to generate
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.1329415Z filtered_base | Error in Query! Catalog Error: Table with name fct_unit_economics does not exist!
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.1386822Z Did you mean "information_schema.constraint_column_usage"?
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.1416142Z 
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.1446652Z LINE 3: from motherduck.fct_unit_economics
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.1447470Z              ^
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.1902574Z kpis | Error in Query! Catalog Error: Table with name fct_unit_economics does not exist!
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.1903704Z Did you mean "information_schema.constraint_column_usage"?
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.1904194Z 
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.1904644Z LINE 9: from motherduck.fct_unit_economics)) b
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.1905112Z              ^
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.1906194Z margin_by_vertical | Error in Query! Catalog Error: Table with name fct_unit_economics does not exist!
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.1907243Z Did you mean "information_schema.constraint_column_usage"?
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.1907737Z 
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.1909903Z LINE 10: from motherduck.fct_unit_economics)) b
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.1910386Z               ^
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.1911221Z fuel_efficiency | Error in Query! Catalog Error: Table with name fct_unit_economics does not exist!
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.1912168Z Did you mean "information_schema.constraint_column_usage"?
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.1912561Z 
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.1912843Z LINE 8: from motherduck.fct_unit_economics)) b
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.1913278Z              ^
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.1914038Z worst_fuel_days | Error in Query! Catalog Error: Table with name fct_unit_economics does not exist!
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.1914973Z Did you mean "information_schema.constraint_column_usage"?
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.1915336Z 
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.1915600Z LINE 9: from motherduck.fct_unit_economics)) b
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.1916202Z              ^
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.1916990Z channel_efficiency | Error in Query! Catalog Error: Table with name stg_marketing does not exist!
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.1918126Z Did you mean "pg_catalog.pg_settings"?
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.1918430Z 
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.1918669Z LINE 9:   from motherduck.stg_marketing
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.1919070Z                ^
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.1919829Z worst_orders | Error in Query! Catalog Error: Table with name fct_unit_economics does not exist!
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.1922206Z Did you mean "information_schema.constraint_column_usage"?
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.1922634Z 
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.1922927Z LINE 15: from motherduck.fct_unit_economics)) b
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.1923393Z               ^
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.1924193Z [31mError in Value: Row 0 does not exist in the dataset[0m
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.1925054Z Both "value" and "column" were supplied as props to Value. "value" will be ignored.
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.1926082Z [31mError in Value: Row 0 does not exist in the dataset[0m
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.1927173Z Both "value" and "column" were supplied as props to Value. "value" will be ignored.
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.1928090Z [31mError in Value: Row 0 does not exist in the dataset[0m
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.1928933Z Both "value" and "column" were supplied as props to Value. "value" will be ignored.
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.1929844Z [31mError in Value: Row 0 does not exist in the dataset[0m
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.1930706Z Both "value" and "column" were supplied as props to Value. "value" will be ignored.
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.1931613Z [31mError in Value: Row 0 does not exist in the dataset[0m
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.1932441Z Both "value" and "column" were supplied as props to Value. "value" will be ignored.
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.1933497Z filtered_base | Error in Query! Catalog Error: Table with name fct_unit_economics does not exist!
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.1934428Z Did you mean "information_schema.constraint_column_usage"?
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.1934816Z 
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.1935082Z LINE 3: from motherduck.fct_unit_economics
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.1935525Z              ^
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.1936337Z kpis | Error in Query! Catalog Error: Table with name fct_unit_economics does not exist!
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.1937236Z Did you mean "information_schema.constraint_column_usage"?
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.1937636Z 
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.1937895Z LINE 9: from motherduck.fct_unit_economics)) b
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.1938331Z              ^
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.1939165Z margin_by_vertical | Error in Query! Catalog Error: Table with name fct_unit_economics does not exist!
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.1940092Z Did you mean "information_schema.constraint_column_usage"?
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.1940457Z 
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.1940740Z LINE 10: from motherduck.fct_unit_economics)) b
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.1941198Z               ^
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.1942002Z fuel_efficiency | Error in Query! Catalog Error: Table with name fct_unit_economics does not exist!
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.1942988Z Did you mean "information_schema.constraint_column_usage"?
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.1943391Z 
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.1943680Z LINE 8: from motherduck.fct_unit_economics)) b
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.1944120Z              ^
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.1944896Z worst_fuel_days | Error in Query! Catalog Error: Table with name fct_unit_economics does not exist!
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.1946229Z Did you mean "information_schema.constraint_column_usage"?
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.1946625Z 
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.1946902Z LINE 9: from motherduck.fct_unit_economics)) b
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.1947320Z              ^
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.1948096Z channel_efficiency | Error in Query! Catalog Error: Table with name stg_marketing does not exist!
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.1948937Z Did you mean "pg_catalog.pg_settings"?
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.1949233Z 
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.1949473Z LINE 9:   from motherduck.stg_marketing
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.1949894Z                ^
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.1950653Z worst_orders | Error in Query! Catalog Error: Table with name fct_unit_economics does not exist!
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.1951579Z Did you mean "information_schema.constraint_column_usage"?
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.1951962Z 
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.1952241Z LINE 15: from motherduck.fct_unit_economics)) b
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.1952682Z               ^
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.1953610Z [31mError in Value: Row 0 does not exist in the dataset[0m
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.1954498Z Both "value" and "column" were supplied as props to Value. "value" will be ignored.
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.1955462Z [31mError in Value: Row 0 does not exist in the dataset[0m
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.1956482Z Both "value" and "column" were supplied as props to Value. "value" will be ignored.
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.1957403Z [31mError in Value: Row 0 does not exist in the dataset[0m
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.1958567Z Both "value" and "column" were supplied as props to Value. "value" will be ignored.
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.1959502Z [31mError in Value: Row 0 does not exist in the dataset[0m
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.1960372Z Both "value" and "column" were supplied as props to Value. "value" will be ignored.
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.1961493Z [31mError in Value: Row 0 does not exist in the dataset[0m
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.1962364Z Both "value" and "column" were supplied as props to Value. "value" will be ignored.
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.2273430Z base | Error in Query! Catalog Error: Table with name fct_unit_economics does not exist!
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.2274734Z Did you mean "information_schema.constraint_column_usage"?
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.2275259Z 
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.2275671Z LINE 3: from motherduck.fct_unit_economics
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.2276243Z              ^
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.2436023Z 
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.2457042Z Run npm run preview to preview your production build locally.
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.2471327Z vertical_rollup | Error in Query! Catalog Error: Table with name fct_unit_economics does not exist!
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.2472428Z Did you mean "information_schema.constraint_column_usage"?
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.2472831Z 
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.2473147Z LINE 13: from motherduck.fct_unit_economics)) b
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.2473655Z               ^
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.2474466Z margin_hist | Error in Query! Catalog Error: Table with name fct_unit_economics does not exist!
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.2475437Z Did you mean "information_schema.constraint_column_usage"?
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.2476019Z 
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.2476341Z LINE 15: from motherduck.fct_unit_economics)) b
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.2476832Z               ^
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.2477659Z worst_orders | Error in Query! Catalog Error: Table with name fct_unit_economics does not exist!
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.2478602Z Did you mean "information_schema.constraint_column_usage"?
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.2478936Z 
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.2479181Z LINE 15: from motherduck.fct_unit_economics)) b
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.2479587Z               ^
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.2480285Z fuel_outliers | Error in Query! Catalog Error: Table with name fct_unit_economics does not exist!
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.2481185Z Did you mean "information_schema.constraint_column_usage"?
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.2481575Z 
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.2481862Z LINE 12: from motherduck.fct_unit_economics)) b
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.2482311Z               ^
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.2483047Z payout_outliers | Error in Query! Catalog Error: Table with name fct_unit_economics does not exist!
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.2483985Z Did you mean "information_schema.constraint_column_usage"?
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.2484364Z 
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.2484633Z LINE 11: from motherduck.fct_unit_economics)) b
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.2485058Z               ^
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.2485983Z base | Error in Query! Catalog Error: Table with name fct_unit_economics does not exist!
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.2486842Z Did you mean "information_schema.constraint_column_usage"?
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.2487213Z 
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.2487470Z LINE 3: from motherduck.fct_unit_economics
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.2487892Z              ^
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.2488706Z vertical_rollup | Error in Query! Catalog Error: Table with name fct_unit_economics does not exist!
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.2496367Z Did you mean "information_schema.constraint_column_usage"?
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.2496923Z 
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.2497288Z LINE 13: from motherduck.fct_unit_economics)) b
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.2497802Z               ^
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.2498676Z margin_hist | Error in Query! Catalog Error: Table with name fct_unit_economics does not exist!
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.2500003Z Did you mean "information_schema.constraint_column_usage"?
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.2500449Z 
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.2500762Z LINE 15: from motherduck.fct_unit_economics)) b
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.2501309Z               ^
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.2502167Z worst_orders | Error in Query! Catalog Error: Table with name fct_unit_economics does not exist!
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.2503201Z Did you mean "information_schema.constraint_column_usage"?
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.2503647Z 
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.2503949Z LINE 15: from motherduck.fct_unit_economics)) b
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.2504442Z               ^
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.2505205Z fuel_outliers | Error in Query! Catalog Error: Table with name fct_unit_economics does not exist!
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.2506515Z Did you mean "information_schema.constraint_column_usage"?
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.2506907Z 
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.2507201Z LINE 12: from motherduck.fct_unit_economics)) b
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.2507696Z               ^
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.2508499Z payout_outliers | Error in Query! Catalog Error: Table with name fct_unit_economics does not exist!
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.2509465Z Did you mean "information_schema.constraint_column_usage"?
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.2509848Z 
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.2510107Z LINE 11: from motherduck.fct_unit_economics)) b
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.2510553Z               ^
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.2510834Z 
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.2526926Z > Using @sveltejs/adapter-static
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.3008328Z   Wrote site to "./build"
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.3008988Z   ✔ done
+build-and-deploy	Build Evidence static site	2026-04-22T18:15:14.5624811Z Build complete --> ./build 
+build-and-deploy	Locate Evidence build output (debug)	﻿2026-04-22T18:15:14.5736963Z ##[group]Run echo "== dashboard directory =="
+build-and-deploy	Locate Evidence build output (debug)	2026-04-22T18:15:14.5737307Z [36;1mecho "== dashboard directory =="[0m
+build-and-deploy	Locate Evidence build output (debug)	2026-04-22T18:15:14.5737570Z [36;1mls -la dashboard || true[0m
+build-and-deploy	Locate Evidence build output (debug)	2026-04-22T18:15:14.5737803Z [36;1mecho "== dashboard/build =="[0m
+build-and-deploy	Locate Evidence build output (debug)	2026-04-22T18:15:14.5738055Z [36;1mls -la dashboard/build || true[0m
+build-and-deploy	Locate Evidence build output (debug)	2026-04-22T18:15:14.5738321Z [36;1mecho "== dashboard/.evidence =="[0m
+build-and-deploy	Locate Evidence build output (debug)	2026-04-22T18:15:14.5738586Z [36;1mls -la dashboard/.evidence || true[0m
+build-and-deploy	Locate Evidence build output (debug)	2026-04-22T18:15:14.5738849Z [36;1mecho "== dashboard/.evidence/build =="[0m
+build-and-deploy	Locate Evidence build output (debug)	2026-04-22T18:15:14.5739140Z [36;1mls -la dashboard/.evidence/build || true[0m
+build-and-deploy	Locate Evidence build output (debug)	2026-04-22T18:15:14.5752185Z shell: /usr/bin/bash -e {0}
+build-and-deploy	Locate Evidence build output (debug)	2026-04-22T18:15:14.5752419Z env:
+build-and-deploy	Locate Evidence build output (debug)	2026-04-22T18:15:14.5752794Z   DUCKDB_PATH: /home/runner/work/unified-unit-economics/unified-unit-economics/warehouse.duckdb
+build-and-deploy	Locate Evidence build output (debug)	2026-04-22T18:15:14.5753290Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.15/x64
+build-and-deploy	Locate Evidence build output (debug)	2026-04-22T18:15:14.5753671Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.15/x64/lib/pkgconfig
+build-and-deploy	Locate Evidence build output (debug)	2026-04-22T18:15:14.5754101Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.15/x64
+build-and-deploy	Locate Evidence build output (debug)	2026-04-22T18:15:14.5754447Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.15/x64
+build-and-deploy	Locate Evidence build output (debug)	2026-04-22T18:15:14.5754786Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.15/x64
+build-and-deploy	Locate Evidence build output (debug)	2026-04-22T18:15:14.5755133Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.15/x64/lib
+build-and-deploy	Locate Evidence build output (debug)	2026-04-22T18:15:14.5755431Z ##[endgroup]
+build-and-deploy	Locate Evidence build output (debug)	2026-04-22T18:15:14.5790063Z == dashboard directory ==
+build-and-deploy	Locate Evidence build output (debug)	2026-04-22T18:15:14.5801669Z total 456
+build-and-deploy	Locate Evidence build output (debug)	2026-04-22T18:15:14.5802074Z drwxr-xr-x   8 runner runner   4096 Apr 22 18:15 .
+build-and-deploy	Locate Evidence build output (debug)	2026-04-22T18:15:14.5802465Z drwxr-xr-x   7 runner runner   4096 Apr 22 18:13 ..
+build-and-deploy	Locate Evidence build output (debug)	2026-04-22T18:15:14.5802875Z drwxr-xr-x   4 runner runner   4096 Apr 22 18:15 .evidence
+build-and-deploy	Locate Evidence build output (debug)	2026-04-22T18:15:14.5803302Z -rw-r--r--   1 runner runner   2535 Apr 22 18:13 app.css
+build-and-deploy	Locate Evidence build output (debug)	2026-04-22T18:15:14.5803703Z drwxr-xr-x   5 runner runner   4096 Apr 22 18:15 build
+build-and-deploy	Locate Evidence build output (debug)	2026-04-22T18:15:14.5804107Z drwxr-xr-x   2 runner runner   4096 Apr 22 18:13 components
+build-and-deploy	Locate Evidence build output (debug)	2026-04-22T18:15:14.5804555Z -rw-r--r--   1 runner runner    110 Apr 22 18:13 evidence.config.yaml
+build-and-deploy	Locate Evidence build output (debug)	2026-04-22T18:15:14.5804971Z -rw-r--r--   1 runner runner   2474 Apr 22 18:13 index.md
+build-and-deploy	Locate Evidence build output (debug)	2026-04-22T18:15:14.5805365Z drwxr-xr-x 571 runner runner  20480 Apr 22 18:14 node_modules
+build-and-deploy	Locate Evidence build output (debug)	2026-04-22T18:15:14.5805922Z -rw-r--r--   1 runner runner   1279 Apr 22 18:13 orders.md
+build-and-deploy	Locate Evidence build output (debug)	2026-04-22T18:15:14.5806569Z -rw-r--r--   1 runner runner 386248 Apr 22 18:14 package-lock.json
+build-and-deploy	Locate Evidence build output (debug)	2026-04-22T18:15:14.5807011Z -rw-r--r--   1 runner runner    808 Apr 22 18:13 package.json
+build-and-deploy	Locate Evidence build output (debug)	2026-04-22T18:15:14.5807387Z drwxr-xr-x   2 runner runner   4096 Apr 22 18:13 pages
+build-and-deploy	Locate Evidence build output (debug)	2026-04-22T18:15:14.5807805Z -rw-r--r--   1 runner runner     82 Apr 22 18:13 postcss.config.cjs
+build-and-deploy	Locate Evidence build output (debug)	2026-04-22T18:15:14.5808205Z drwxr-xr-x   3 runner runner   4096 Apr 22 18:13 sources
+build-and-deploy	Locate Evidence build output (debug)	2026-04-22T18:15:14.5808624Z -rw-r--r--   1 runner runner    260 Apr 22 18:13 tailwind.config.cjs
+build-and-deploy	Locate Evidence build output (debug)	2026-04-22T18:15:14.5811281Z == dashboard/build ==
+build-and-deploy	Locate Evidence build output (debug)	2026-04-22T18:15:14.5820771Z total 92
+build-and-deploy	Locate Evidence build output (debug)	2026-04-22T18:15:14.5823571Z drwxr-xr-x 5 runner runner  4096 Apr 22 18:15 .
+build-and-deploy	Locate Evidence build output (debug)	2026-04-22T18:15:14.5824211Z drwxr-xr-x 8 runner runner  4096 Apr 22 18:15 ..
+build-and-deploy	Locate Evidence build output (debug)	2026-04-22T18:15:14.5824832Z drwxr-xr-x 3 runner runner  4096 Apr 22 18:15 _app
+build-and-deploy	Locate Evidence build output (debug)	2026-04-22T18:15:14.5825479Z drwxr-xr-x 4 runner runner  4096 Apr 22 18:15 api
+build-and-deploy	Locate Evidence build output (debug)	2026-04-22T18:15:14.5826336Z -rw-r--r-- 1 runner runner  1842 Apr 22 18:15 apple-touch-icon.png
+build-and-deploy	Locate Evidence build output (debug)	2026-04-22T18:15:14.5827101Z -rw-r--r-- 1 runner runner 15086 Apr 22 18:15 favicon.ico
+build-and-deploy	Locate Evidence build output (debug)	2026-04-22T18:15:14.5827932Z -rw-r--r-- 1 runner runner  1222 Apr 22 18:15 fix-tprotocol-service-worker.js
+build-and-deploy	Locate Evidence build output (debug)	2026-04-22T18:15:14.5828752Z -rw-r--r-- 1 runner runner  3936 Apr 22 18:15 icon-192.png
+build-and-deploy	Locate Evidence build output (debug)	2026-04-22T18:15:14.5829410Z -rw-r--r-- 1 runner runner 11158 Apr 22 18:15 icon-512.png
+build-and-deploy	Locate Evidence build output (debug)	2026-04-22T18:15:14.5830030Z -rw-r--r-- 1 runner runner  1009 Apr 22 18:15 icon.svg
+build-and-deploy	Locate Evidence build output (debug)	2026-04-22T18:15:14.5830685Z -rw-r--r-- 1 runner runner 23722 Apr 22 18:15 index.html
+build-and-deploy	Locate Evidence build output (debug)	2026-04-22T18:15:14.5831442Z -rw-r--r-- 1 runner runner   133 Apr 22 18:15 manifest.webmanifest
+build-and-deploy	Locate Evidence build output (debug)	2026-04-22T18:15:14.5832339Z drwxr-xr-x 2 runner runner  4096 Apr 22 18:15 orders
+build-and-deploy	Locate Evidence build output (debug)	2026-04-22T18:15:14.5832828Z == dashboard/.evidence ==
+build-and-deploy	Locate Evidence build output (debug)	2026-04-22T18:15:14.5834645Z total 16
+build-and-deploy	Locate Evidence build output (debug)	2026-04-22T18:15:14.5837349Z drwxr-xr-x 4 runner runner 4096 Apr 22 18:15 .
+build-and-deploy	Locate Evidence build output (debug)	2026-04-22T18:15:14.5838012Z drwxr-xr-x 8 runner runner 4096 Apr 22 18:15 ..
+build-and-deploy	Locate Evidence build output (debug)	2026-04-22T18:15:14.5838677Z drwxr-xr-x 2 runner runner 4096 Apr 22 18:15 customization
+build-and-deploy	Locate Evidence build output (debug)	2026-04-22T18:15:14.5839334Z drwxr-xr-x 7 runner runner 4096 Apr 22 18:15 template
+build-and-deploy	Locate Evidence build output (debug)	2026-04-22T18:15:14.5839912Z == dashboard/.evidence/build ==
+build-and-deploy	Locate Evidence build output (debug)	2026-04-22T18:15:14.5846000Z ls: cannot access 'dashboard/.evidence/build': No such file or directory
+build-and-deploy	Normalize build output to dashboard/build	﻿2026-04-22T18:15:14.5869170Z ##[group]Run if [ -d "dashboard/build" ]; then
+build-and-deploy	Normalize build output to dashboard/build	2026-04-22T18:15:14.5869490Z [36;1mif [ -d "dashboard/build" ]; then[0m
+build-and-deploy	Normalize build output to dashboard/build	2026-04-22T18:15:14.5869748Z [36;1m  echo "Using dashboard/build"[0m
+build-and-deploy	Normalize build output to dashboard/build	2026-04-22T18:15:14.5869987Z [36;1m  exit 0[0m
+build-and-deploy	Normalize build output to dashboard/build	2026-04-22T18:15:14.5870153Z [36;1mfi[0m
+build-and-deploy	Normalize build output to dashboard/build	2026-04-22T18:15:14.5870359Z [36;1mif [ -d "dashboard/.evidence/build" ]; then[0m
+build-and-deploy	Normalize build output to dashboard/build	2026-04-22T18:15:14.5870731Z [36;1m  echo "Found dashboard/.evidence/build; copying to dashboard/build"[0m
+build-and-deploy	Normalize build output to dashboard/build	2026-04-22T18:15:14.5871077Z [36;1m  mkdir -p dashboard/build[0m
+build-and-deploy	Normalize build output to dashboard/build	2026-04-22T18:15:14.5871373Z [36;1m  cp -R dashboard/.evidence/build/* dashboard/build/[0m
+build-and-deploy	Normalize build output to dashboard/build	2026-04-22T18:15:14.5871654Z [36;1m  exit 0[0m
+build-and-deploy	Normalize build output to dashboard/build	2026-04-22T18:15:14.5871825Z [36;1mfi[0m
+build-and-deploy	Normalize build output to dashboard/build	2026-04-22T18:15:14.5872048Z [36;1mecho "No Evidence build output directory found."[0m
+build-and-deploy	Normalize build output to dashboard/build	2026-04-22T18:15:14.5872321Z [36;1mexit 1[0m
+build-and-deploy	Normalize build output to dashboard/build	2026-04-22T18:15:14.5884253Z shell: /usr/bin/bash -e {0}
+build-and-deploy	Normalize build output to dashboard/build	2026-04-22T18:15:14.5884485Z env:
+build-and-deploy	Normalize build output to dashboard/build	2026-04-22T18:15:14.5884857Z   DUCKDB_PATH: /home/runner/work/unified-unit-economics/unified-unit-economics/warehouse.duckdb
+build-and-deploy	Normalize build output to dashboard/build	2026-04-22T18:15:14.5885381Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.15/x64
+build-and-deploy	Normalize build output to dashboard/build	2026-04-22T18:15:14.5885914Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.15/x64/lib/pkgconfig
+build-and-deploy	Normalize build output to dashboard/build	2026-04-22T18:15:14.5886307Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.15/x64
+build-and-deploy	Normalize build output to dashboard/build	2026-04-22T18:15:14.5886665Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.15/x64
+build-and-deploy	Normalize build output to dashboard/build	2026-04-22T18:15:14.5887010Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.15/x64
+build-and-deploy	Normalize build output to dashboard/build	2026-04-22T18:15:14.5887357Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.15/x64/lib
+build-and-deploy	Normalize build output to dashboard/build	2026-04-22T18:15:14.5887642Z ##[endgroup]
+build-and-deploy	Normalize build output to dashboard/build	2026-04-22T18:15:14.5918421Z Using dashboard/build
+build-and-deploy	Configure Pages	﻿2026-04-22T18:15:14.5958854Z ##[group]Run actions/configure-pages@v5
+build-and-deploy	Configure Pages	2026-04-22T18:15:14.5959109Z with:
+build-and-deploy	Configure Pages	2026-04-22T18:15:14.5959399Z   token: ***
+build-and-deploy	Configure Pages	2026-04-22T18:15:14.5959576Z   enablement: false
+build-and-deploy	Configure Pages	2026-04-22T18:15:14.5959748Z env:
+build-and-deploy	Configure Pages	2026-04-22T18:15:14.5960094Z   DUCKDB_PATH: /home/runner/work/unified-unit-economics/unified-unit-economics/warehouse.duckdb
+build-and-deploy	Configure Pages	2026-04-22T18:15:14.5960584Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.15/x64
+build-and-deploy	Configure Pages	2026-04-22T18:15:14.5960969Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.15/x64/lib/pkgconfig
+build-and-deploy	Configure Pages	2026-04-22T18:15:14.5961345Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.15/x64
+build-and-deploy	Configure Pages	2026-04-22T18:15:14.5961689Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.15/x64
+build-and-deploy	Configure Pages	2026-04-22T18:15:14.5962048Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.15/x64
+build-and-deploy	Configure Pages	2026-04-22T18:15:14.5962395Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.15/x64/lib
+build-and-deploy	Configure Pages	2026-04-22T18:15:14.5962675Z ##[endgroup]
+build-and-deploy	Upload Pages artifact	﻿2026-04-22T18:15:15.0140899Z ##[group]Run actions/upload-pages-artifact@v3
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0141211Z with:
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0141393Z   path: dashboard/build
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0141600Z   name: github-pages
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0141791Z   retention-days: 1
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0141960Z env:
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0142302Z   DUCKDB_PATH: /home/runner/work/unified-unit-economics/unified-unit-economics/warehouse.duckdb
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0142788Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.15/x64
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0143163Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.15/x64/lib/pkgconfig
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0143542Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.15/x64
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0143884Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.15/x64
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0144227Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.15/x64
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0144566Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.15/x64/lib
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0144855Z   GITHUB_PAGES: true
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0145044Z ##[endgroup]
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0219099Z ##[group]Run echo ::group::Archive artifact
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0219421Z [36;1mecho ::group::Archive artifact[0m
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0219654Z [36;1mtar \[0m
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0219877Z [36;1m  --dereference --hard-dereference \[0m
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0220155Z [36;1m  --directory "$INPUT_PATH" \[0m
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0220413Z [36;1m  -cvf "$RUNNER_TEMP/artifact.tar" \[0m
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0220674Z [36;1m  --exclude=.git \[0m
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0220898Z [36;1m  --exclude=.github \[0m
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0221104Z [36;1m  .[0m
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0221288Z [36;1mecho ::endgroup::[0m
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0243824Z shell: /usr/bin/sh -e {0}
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0244060Z env:
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0244427Z   DUCKDB_PATH: /home/runner/work/unified-unit-economics/unified-unit-economics/warehouse.duckdb
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0244924Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.15/x64
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0245310Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.15/x64/lib/pkgconfig
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0245796Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.15/x64
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0246147Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.15/x64
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0246500Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.15/x64
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0246847Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.15/x64/lib
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0272205Z   GITHUB_PAGES: true
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0272483Z   INPUT_PATH: dashboard/build
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0272730Z ##[endgroup]
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0309152Z ##[group]Archive artifact
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0319638Z ./
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0319969Z ./favicon.ico
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0320347Z ./manifest.webmanifest
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0320681Z ./index.html
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0320966Z ./_app/
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0321264Z ./_app/immutable/
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0321603Z ./_app/immutable/entry/
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0322067Z ./_app/immutable/entry/app.CAuumATM.js
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0322614Z ./_app/immutable/entry/start.Bcw-eE5T.js
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0323118Z ./_app/immutable/chunks/
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0323826Z ./_app/immutable/chunks/prism-sql.AgAyy5H_.js
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0324227Z ./_app/immutable/chunks/prism-yaml.Chm5ZdEN.js
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0324577Z ./_app/immutable/chunks/prism-svelte.BY159py_.js
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0324907Z ./_app/immutable/chunks/index.D83DyvGr.js
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0345821Z ./_app/immutable/chunks/duckdb-browser-mvp.worker.CagHDEhr.js
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0346551Z ./_app/immutable/chunks/VennDiagram.svelte_svelte_type_style_lang.Cvg5Zjv9.js
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0358111Z ./_app/immutable/chunks/index.D5fCSie2.js
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0358740Z ./_app/immutable/chunks/duckdb-browser-eh.worker.pjt9NMnw.js
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0359165Z ./_app/immutable/chunks/Button.CA2pzHiz.js
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0366493Z ./_app/immutable/chunks/prism-python.DhmbaUsA.js
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0386440Z ./_app/immutable/chunks/prism-bash.DTkDXsAh.js
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0394857Z ./_app/immutable/chunks/scheduler.C1OMcT9x.js
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0395915Z ./_app/immutable/chunks/duckdb-mvp.B6BNNcYV.js
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0396371Z ./_app/immutable/chunks/AccordionItem.DDw0T_Mk.js
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0396810Z ./_app/immutable/chunks/prism-markdown.4MKFcK2x.js
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0397219Z ./_app/immutable/chunks/stores.D_frlbxm.js
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0397566Z ./_app/immutable/chunks/duckdb-eh.Dx9q7Mt5.js
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0397954Z ./_app/immutable/chunks/setTrackProxy.DjIbdjlZ.js
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0398323Z ./_app/immutable/chunks/index.rV6zwFgL.js
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0398692Z ./_app/immutable/chunks/preload-helper.D7HrI6pR.js
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0399028Z ./_app/immutable/chunks/BarChart.BkP3ycVn.js
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0399342Z ./_app/immutable/chunks/entry.SBEMmHsa.js
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0399604Z ./_app/immutable/assets/
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0399910Z ./_app/immutable/assets/Inter-Black.DgUKMdlB.woff2
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0400324Z ./_app/immutable/assets/Inter-SemiBoldItalic.BNz1Al2H.woff2
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0400758Z ./_app/immutable/assets/Inter-SemiBold.Ctx7G98q.woff2
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0401195Z ./_app/immutable/assets/Inter-ExtraLightItalic.B3gY-m5W.woff
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0401607Z ./_app/immutable/assets/Inter-ExtraBold.B8imQN9B.woff
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0401969Z ./_app/immutable/assets/Inter-Thin.CSJ_owlW.woff2
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0402321Z ./_app/immutable/assets/VennDiagram.mL56xmhJ.css
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0402833Z ./_app/immutable/assets/wordmark-black.rfl-FBgf.png
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0403349Z ./_app/immutable/assets/Spectral-Regular.C0aqGnDS.woff
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0403939Z ./_app/immutable/assets/duckdb-mvp.BP0pRkMH.wasm
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0594037Z ./_app/immutable/assets/Spectral-Bold.BwJz_A1v.woff2
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0594841Z ./_app/immutable/assets/Inter-LightItalic.COmGGTuG.woff2
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0595557Z ./_app/immutable/assets/Spectral-SemiBold.zu1TM2FZ.woff2
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0596174Z ./_app/immutable/assets/Inter-Light.CG9upfZ4.woff
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0597920Z ./_app/immutable/assets/Inter-SemiBoldItalic.CxeAX7g8.woff
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0598898Z ./_app/immutable/assets/Spectral-ExtraBold.DeRaT2m-.woff2
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0600743Z ./_app/immutable/assets/Spectral-LightItalic.zW0f9iJS.woff2
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0601464Z ./_app/immutable/assets/Inter-Black.DtxVgCT8.woff
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0602055Z ./_app/immutable/assets/duckdb-eh.9ubY-jlA.wasm
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0770567Z ./_app/immutable/assets/Inter-ExtraLight.egkqWonf.woff2
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0771351Z ./_app/immutable/assets/wordmark-white.C8ZS96Ri.png
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0772040Z ./_app/immutable/assets/Inter-ThinItalic.B2bFwwDp.woff
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0772779Z ./_app/immutable/assets/Spectral-LightItalic.B3o_X74d.woff
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0773468Z ./_app/immutable/assets/Inter-Italic._3PMmu0i.woff2
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0774163Z ./_app/immutable/assets/Spectral-BoldItalic.CQquRzSI.woff
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0774844Z ./_app/immutable/assets/VennDiagram.BCpuTJYF.css
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0775585Z ./_app/immutable/assets/Spectral-SemiBoldItalic.DjbDqXej.woff
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0776451Z ./_app/immutable/assets/Spectral-Medium.NsGaEaui.woff2
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0777393Z ./_app/immutable/assets/Inter-Medium.P1cOs5ep.woff2
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0778100Z ./_app/immutable/assets/Inter-LightItalic.C2ZuFZOC.woff
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0778826Z ./_app/immutable/assets/Inter-MediumItalic.8laNK8GF.woff
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0779525Z ./_app/immutable/assets/Inter-BoldItalic.C906RMVC.woff
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0780228Z ./_app/immutable/assets/Spectral-Regular.BE1HJwUh.woff2
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0780946Z ./_app/immutable/assets/Inter-ThinItalic.B6FKq6qK.woff2
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0781686Z ./_app/immutable/assets/Spectral-MediumItalic.BvSK_s7Y.woff2
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0782492Z ./_app/immutable/assets/Spectral-ExtraBoldItalic.SZr5i_vZ.woff
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0783266Z ./_app/immutable/assets/Spectral-ExtraLight.HAWHIZWB.woff
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0784085Z ./_app/immutable/assets/Spectral-ExtraLightItalic.C9nFbxmj.woff
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0784847Z ./_app/immutable/assets/Inter-Regular.DJOZHnwz.woff
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0785674Z ./_app/immutable/assets/Inter-BoldItalic.R15IsAnq.woff2
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0786426Z ./_app/immutable/assets/Inter-Light.CdXm_ABL.woff2
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0787035Z ./_app/immutable/assets/_layout.0n2Cc25X.css
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0787724Z ./_app/immutable/assets/Spectral-ExtraBold.Dm6k0JyR.woff
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0788443Z ./_app/immutable/assets/Spectral-Italic.3s0_PsVL.woff
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0789129Z ./_app/immutable/assets/Spectral-SemiBoldItalic.D3fgUf4W.woff2
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0789682Z ./_app/immutable/assets/Inter-SemiBold.BHlX_6qk.woff
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0790467Z ./_app/immutable/assets/Spectral-ExtraLightItalic.xW7ezc0a.woff2
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0791246Z ./_app/immutable/assets/Spectral-Medium.BZl4fq6u.woff
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0791887Z ./_app/immutable/assets/0.4Cgj_-wM.css
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0792463Z ./_app/immutable/assets/Inter-Italic.Ci_5KQU1.woff
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0793149Z ./_app/immutable/assets/Inter-BlackItalic.ZFcDzO3e.woff2
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0793891Z ./_app/immutable/assets/Spectral-BoldItalic.CQC_WCFZ.woff2
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0794591Z ./_app/immutable/assets/Inter-Medium.oHczPpWt.woff
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0795319Z ./_app/immutable/assets/Spectral-ExtraLight.HPQmpGpQ.woff2
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0796089Z ./_app/immutable/assets/Inter-Bold.2PT7Q-hu.woff
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0796768Z ./_app/immutable/assets/Spectral-SemiBold.CCUIByHq.woff
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0797458Z ./_app/immutable/assets/Spectral-Bold.C57huwyI.woff
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0798196Z ./_app/immutable/assets/Inter-ExtraBoldItalic.OErwaGem.woff2
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0799010Z ./_app/immutable/assets/Inter-MediumItalic.DWiIAHvp.woff2
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0799799Z ./_app/immutable/assets/Inter-ExtraBoldItalic.Bt8eprh6.woff
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0800542Z ./_app/immutable/assets/Inter-Regular.CKDp9E3C.woff2
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0801216Z ./_app/immutable/assets/Spectral-Light.DBct1VnS.woff
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0801983Z ./_app/immutable/assets/Spectral-ExtraBoldItalic.MQ9B1Gco.woff2
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0802820Z ./_app/immutable/assets/Inter-ExtraLightItalic.Bf25KIHs.woff2
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0803543Z ./_app/immutable/assets/Inter-Bold.CuhepTt8.woff2
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0804223Z ./_app/immutable/assets/Inter-ExtraLight.CbFdmbHh.woff
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0804929Z ./_app/immutable/assets/Spectral-Italic.wSPWDyg7.woff2
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0805615Z ./_app/immutable/assets/Spectral-Light.TIhg4DnI.woff2
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0806433Z ./_app/immutable/assets/Inter-Thin.CVMZtQER.woff
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0807118Z ./_app/immutable/assets/Inter-BlackItalic.CkZ-ktDH.woff
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0807818Z ./_app/immutable/assets/Inter-ExtraBold.B0QOs-T2.woff2
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0808566Z ./_app/immutable/assets/Spectral-MediumItalic.De40Wj9n.woff
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0809153Z ./_app/immutable/workers/
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0809790Z ./_app/immutable/workers/duckdb-browser-mvp.worker-Cz10_53p.js
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0812760Z ./_app/immutable/workers/duckdb-browser-eh.worker-CnSho72U.js
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0816599Z ./_app/immutable/nodes/
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0817048Z ./_app/immutable/nodes/3.RL0-C1FO.js
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0817525Z ./_app/immutable/nodes/2.CgQWC5At.js
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0817803Z ./_app/immutable/nodes/6.xMKj5ith.js
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0818865Z ./_app/immutable/nodes/0.CbZOFuAO.js
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0819233Z ./_app/immutable/nodes/4.CAZkBqOp.js
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0819527Z ./_app/immutable/nodes/8.DaRBc-fW.js
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0820753Z ./_app/immutable/nodes/7.D71X_XmP.js
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0821454Z ./_app/immutable/nodes/1.BdV47V_F.js
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0822051Z ./_app/immutable/nodes/5.CaOSLMqp.js
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0822581Z ./_app/version.json
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0822951Z ./_app/env.js
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0823332Z ./icon-512.png
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0823815Z ./fix-tprotocol-service-worker.js
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0824270Z ./icon-192.png
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0824675Z ./orders/
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0825007Z ./orders/index.html
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0825337Z ./api/
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0825862Z ./api/customFormattingSettings.json/
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0826591Z ./api/customFormattingSettings.json/GET.json
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0827120Z ./api/pagesManifest.json
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0827453Z ./api/orders/
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0827831Z ./api/orders/evidencemeta.json
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0828225Z ./api/evidencemeta.json
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0828435Z ./icon.svg
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0828623Z ./apple-touch-icon.png
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0829038Z ##[endgroup]
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0875192Z ##[group]Run actions/upload-artifact@v4
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0875449Z with:
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0875616Z   name: github-pages
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0876075Z   path: /home/runner/work/_temp/artifact.tar
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0876330Z   retention-days: 1
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0876518Z   if-no-files-found: error
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0876735Z   compression-level: 6
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0876932Z   overwrite: false
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0877115Z   include-hidden-files: false
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0877326Z env:
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0877671Z   DUCKDB_PATH: /home/runner/work/unified-unit-economics/unified-unit-economics/warehouse.duckdb
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0878165Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.15/x64
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0878542Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.15/x64/lib/pkgconfig
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0878922Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.15/x64
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0879266Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.15/x64
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0879598Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.15/x64
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0879945Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.15/x64/lib
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0880234Z   GITHUB_PAGES: true
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.0880421Z ##[endgroup]
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.2874738Z With the provided path, there will be 1 file uploaded
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.2886826Z Artifact name is valid!
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.2887531Z Root directory input is valid!
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:15.5304427Z Beginning upload of artifact content to blob storage
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:17.0723427Z Uploaded bytes 8388608
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:17.3137893Z Uploaded bytes 16777216
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:17.9179536Z Uploaded bytes 25165824
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:18.0448526Z Uploaded bytes 26269639
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:18.1027671Z Finished uploading artifact content to blob storage!
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:18.1030417Z SHA256 digest of uploaded artifact zip is 7223e2507951bffd5f47b6cba57ccc5fa4e838439bc0dd4f9cfdfae2c1ebf3d1
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:18.1031886Z Finalizing artifact upload
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:18.2770729Z Artifact github-pages.zip successfully finalized. Artifact ID 6585474193
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:18.2771774Z Artifact github-pages has been successfully uploaded! Final size is 26269639 bytes. Artifact ID is 6585474193
+build-and-deploy	Upload Pages artifact	2026-04-22T18:15:18.2778490Z Artifact download URL: https://github.com/azzammasood/unified-unit-economics/actions/runs/24794819623/artifacts/6585474193
+build-and-deploy	Deploy to GitHub Pages	﻿2026-04-22T18:15:18.2935958Z ##[group]Run actions/deploy-pages@v4
+build-and-deploy	Deploy to GitHub Pages	2026-04-22T18:15:18.2936259Z with:
+build-and-deploy	Deploy to GitHub Pages	2026-04-22T18:15:18.2936539Z   token: ***
+build-and-deploy	Deploy to GitHub Pages	2026-04-22T18:15:18.2936720Z   timeout: 600000
+build-and-deploy	Deploy to GitHub Pages	2026-04-22T18:15:18.2936897Z   error_count: 10
+build-and-deploy	Deploy to GitHub Pages	2026-04-22T18:15:18.2937219Z   reporting_interval: 5000
+build-and-deploy	Deploy to GitHub Pages	2026-04-22T18:15:18.2937448Z   artifact_name: github-pages
+build-and-deploy	Deploy to GitHub Pages	2026-04-22T18:15:18.2937674Z   preview: false
+build-and-deploy	Deploy to GitHub Pages	2026-04-22T18:15:18.2937852Z env:
+build-and-deploy	Deploy to GitHub Pages	2026-04-22T18:15:18.2938208Z   DUCKDB_PATH: /home/runner/work/unified-unit-economics/unified-unit-economics/warehouse.duckdb
+build-and-deploy	Deploy to GitHub Pages	2026-04-22T18:15:18.2938707Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.15/x64
+build-and-deploy	Deploy to GitHub Pages	2026-04-22T18:15:18.2939103Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.15/x64/lib/pkgconfig
+build-and-deploy	Deploy to GitHub Pages	2026-04-22T18:15:18.2939491Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.15/x64
+build-and-deploy	Deploy to GitHub Pages	2026-04-22T18:15:18.2939848Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.15/x64
+build-and-deploy	Deploy to GitHub Pages	2026-04-22T18:15:18.2940200Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.15/x64
+build-and-deploy	Deploy to GitHub Pages	2026-04-22T18:15:18.2940559Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.15/x64/lib
+build-and-deploy	Deploy to GitHub Pages	2026-04-22T18:15:18.2940890Z   GITHUB_PAGES: true
+build-and-deploy	Deploy to GitHub Pages	2026-04-22T18:15:18.2941088Z ##[endgroup]
+build-and-deploy	Deploy to GitHub Pages	2026-04-22T18:15:18.7538840Z Fetching artifact metadata for "github-pages" in this workflow run
+build-and-deploy	Deploy to GitHub Pages	2026-04-22T18:15:18.9682643Z Found 1 artifact(s)
+build-and-deploy	Deploy to GitHub Pages	2026-04-22T18:15:18.9695440Z Creating Pages deployment with payload:
+build-and-deploy	Deploy to GitHub Pages	2026-04-22T18:15:18.9696036Z {
+build-and-deploy	Deploy to GitHub Pages	2026-04-22T18:15:18.9696363Z 	"artifact_id": 6585474193,
+build-and-deploy	Deploy to GitHub Pages	2026-04-22T18:15:18.9697017Z 	"pages_build_version": "6734df2a74655aae1aee1b79e484a7002faa44c8",
+build-and-deploy	Deploy to GitHub Pages	2026-04-22T18:15:18.9730757Z 	"oidc_token": "***"
+build-and-deploy	Deploy to GitHub Pages	2026-04-22T18:15:18.9730978Z }
+build-and-deploy	Deploy to GitHub Pages	2026-04-22T18:15:19.4037878Z Created deployment for 6734df2a74655aae1aee1b79e484a7002faa44c8, ID: 6734df2a74655aae1aee1b79e484a7002faa44c8
+build-and-deploy	Deploy to GitHub Pages	2026-04-22T18:15:24.4051669Z Getting Pages deployment status...
+build-and-deploy	Deploy to GitHub Pages	2026-04-22T18:15:24.6272961Z Reported success!
+build-and-deploy	Post Set up Node	﻿2026-04-22T18:15:24.6443511Z Post job cleanup.
+build-and-deploy	Post Set up Node	2026-04-22T18:15:24.7854565Z Cache hit occurred on the primary key node-cache-Linux-x64-npm-e758361026948bcbdc16fa636ba3368fcab45a0d25fa53762aea2962a9669e9e, not saving cache.
+build-and-deploy	Post Set up Python	﻿2026-04-22T18:15:24.7952878Z Post job cleanup.
+build-and-deploy	Post Run actions/checkout@v4	﻿2026-04-22T18:15:24.9436304Z Post job cleanup.
+build-and-deploy	Post Run actions/checkout@v4	2026-04-22T18:15:25.0299809Z [command]/usr/bin/git version
+build-and-deploy	Post Run actions/checkout@v4	2026-04-22T18:15:25.0332492Z git version 2.53.0
+build-and-deploy	Post Run actions/checkout@v4	2026-04-22T18:15:25.0370410Z Temporarily overriding HOME='/home/runner/work/_temp/30ad6470-e63b-4f20-9aa8-0245c9b3055a' before making global git config changes
+build-and-deploy	Post Run actions/checkout@v4	2026-04-22T18:15:25.0371540Z Adding repository directory to the temporary git global config as a safe directory
+build-and-deploy	Post Run actions/checkout@v4	2026-04-22T18:15:25.0385137Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/unified-unit-economics/unified-unit-economics
+build-and-deploy	Post Run actions/checkout@v4	2026-04-22T18:15:25.0415384Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+build-and-deploy	Post Run actions/checkout@v4	2026-04-22T18:15:25.0442287Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+build-and-deploy	Post Run actions/checkout@v4	2026-04-22T18:15:25.0612238Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+build-and-deploy	Post Run actions/checkout@v4	2026-04-22T18:15:25.0628668Z http.https://github.com/.extraheader
+build-and-deploy	Post Run actions/checkout@v4	2026-04-22T18:15:25.0639297Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+build-and-deploy	Post Run actions/checkout@v4	2026-04-22T18:15:25.0663437Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+build-and-deploy	Post Run actions/checkout@v4	2026-04-22T18:15:25.0830307Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+build-and-deploy	Post Run actions/checkout@v4	2026-04-22T18:15:25.0855629Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+build-and-deploy	Complete job	﻿2026-04-22T18:15:25.1123873Z Cleaning up orphan processes
+build-and-deploy	Complete job	2026-04-22T18:15:25.1360235Z ##[warning]Node.js 20 actions are deprecated. The following actions are running on Node.js 20 and may not work as expected: actions/checkout@v4, actions/configure-pages@v5, actions/deploy-pages@v4, actions/setup-node@v4, actions/setup-python@v5, actions/upload-artifact@v4. Actions will be forced to run with Node.js 24 by default starting June 2nd, 2026. Node.js 20 will be removed from the runner on September 16th, 2026. Please check if updated versions of these actions are available that support Node.js 24. To opt into Node.js 24 now, set the FORCE_JAVASCRIPT_ACTIONS_TO_NODE24=true environment variable on the runner or in your workflow file. Once Node.js 24 becomes the default, you can temporarily opt out by setting ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
